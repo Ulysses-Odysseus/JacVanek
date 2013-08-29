@@ -8,10 +8,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content=""/>
   
-  <title>Motha Fuckin Title and Shit</title>
+  <title>Jac Vanek</title>
   
   <!-- Styling -->
   <link rel="stylesheet" href="css/main.css" media="all">
+
+  <!--[if IE]>
+    <link rel="stylesheet" href="css/ie.css" media="all">
+  <![endif]-->
 
   <!-- Javascript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -22,8 +26,9 @@
   <div id="container">
 
     <header>
-      <a href="./" title="Jac Vanek" target="_top">
-        <img src="img/jac-vanek-logo.png" alt="Jac Vanek Logo">
+      <a class="logo" href="./" title="Jac Vanek" target="_top">
+        <!-- IE8 Fallback for logo -->
+        <img src="img/jac-vanek-logo.svg" alt="Jac Vanek Logo" onerror="this.onerror=null; this.src='jac-vanek-logo.png">
       </a>
       <nav>
         <ul class="linearTrans">

@@ -21,8 +21,9 @@
   <div id="container">
 
     <header>
-      <a href="./" title="Jac Vanek" target="_top">
-        <img src="img/jac-vanek-logo.png" alt="Jac Vanek Logo">
+      <a class="logo" href="./" title="Jac Vanek" target="_top">
+        <!-- IE8 Fallback for logo -->
+        <img src="img/jac-vanek-logo.svg" alt="Jac Vanek Logo" onerror="this.onerror=null; this.src='jac-vanek-logo.png">
       </a>
       <nav>
         <!-- Post Categories -->

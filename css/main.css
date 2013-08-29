@@ -32,17 +32,21 @@ h1 {
   -o-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75); }
 
-header {
+#container header {
   text-align: center;
   padding: 50px 0 30px 0; }
-
-nav {
+  #container header .logo {
+    display: block;
+    width: 563px;
+    height: 80px;
+    margin: 0 auto; }
+#container nav {
   width: 100%;
   float: left;
   position: relative;
   margin: 30px 0 40px 0;
   padding: 0; }
-  nav ul {
+  #container nav ul {
     clear: left;
     float: left;
     list-style: none;
@@ -51,16 +55,15 @@ nav {
     position: relative;
     left: 50%;
     text-align: center; }
-    nav ul li {
-      display: block;
+    #container nav ul li {
+      display: inline-block;
       float: left;
-      list-style: none;
       margin: 0;
       padding: 0;
       position: relative;
       right: 50%; }
-      nav ul li a {
-        display: block;
+      #container nav ul li a {
+        display: inline-block;
         float: left;
         margin: 0;
         padding: 0 35px 5px 35px;
@@ -69,29 +72,28 @@ nav {
         text-align: center;
         text-transform: uppercase;
         border-bottom: 1px solid #cccccc; }
-        nav ul li a:hover {
+        #container nav ul li a:hover {
           color: #42cdc8;
           border-bottom: 1px solid #42cdc8; }
-      nav ul li:first-child a {
+      #container nav ul li:first-child a {
         padding: 0 35px 5px 0; }
-      nav ul li:last-child a {
+      #container nav ul li:last-child a {
         padding: 0 0 5px 35px; }
-
-section {
+#container section {
   width: 660px;
   margin: 0 auto;
   padding: 0 0 40px 0; }
-  section article {
+  #container section article {
     width: inherit;
     margin: 40px 0; }
-    section article p {
+    #container section article p {
       margin: 0 0 20px;
       text-align: left; }
-    section article img {
+    #container section article img {
       width: 100%;
       height: auto;
       margin: 0 0 20px; }
-    section article time {
+    #container section article time {
       color: #42cdc8;
       margin: 0;
       padding: 10px 0 10px 25px;
@@ -99,29 +101,97 @@ section {
       line-height: 18px;
       word-spacing: 2px;
       text-transform: uppercase;
-      background: url(../img/icon-clock.png) no-repeat left; }
-    section article .count {
-      width: 25%;
+      background: url(../img/icon-clock.svg) no-repeat left; }
+    #container section article .count {
+      width: 100%;
       margin: 40px auto 0 auto;
       font-weight: 400;
       font-size: .85em;
       word-spacing: 5px;
       text-transform: uppercase; }
-      section article .count a:hover {
+      #container section article .count a:hover {
         color: #42cdc8; }
-    section article .line,
-    section article .singleLine {
+    #container section article .line,
+    #container section article .singleLine {
       display: block;
       width: 25%;
       height: 1px;
       margin-left: auto;
       margin-right: auto;
       border-bottom: 1px solid #cccccc; }
-    section article .line {
+    #container section article .line {
       margin-top: 10px;
       margin-bottom: 60px; }
-    section article .singleLine {
+    #container section article .singleLine {
       margin-top: 40px;
       margin-bottom: 40px; }
-    section article .comments {
+    #container section article .comments {
       width: 100%; }
+
+@media all and (max-width: 750px) and (min-width: 320px) {
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font: normal 14px/18px "Source Sans Pro", sans-serif;
+    background: white; }
+
+  #container {
+    padding: 0 20px; }
+    #container header {
+      padding: 30px 0 0 0;
+      border-bottom: 1px solid #cccccc; }
+      #container header .logo {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0; }
+        #container header .logo img {
+          width: 100%; }
+    #container nav {
+      width: 100%;
+      float: none;
+      position: static;
+      margin: 0;
+      padding: 0 0 10px 0; }
+      #container nav ul {
+        clear: left;
+        float: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: static;
+        left: none;
+        text-align: center; }
+        #container nav ul li {
+          display: inline;
+          float: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          position: static;
+          right: none; }
+          #container nav ul li a {
+            display: inline-block;
+            float: none;
+            padding: 0;
+            margin: 0 10px 5px 10px;
+            font-size: 1.2em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: none; }
+            #container nav ul li a:hover {
+              color: #42cdc8;
+              border-bottom: none; }
+          #container nav ul li:first-child a {
+            padding: 0 0 5px 0; }
+          #container nav ul li:last-child a {
+            padding: 0 0 5px 0; }
+    #container section {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 0 0 0; }
+      #container section article {
+        width: inherit;
+        margin: 0 0 20px 0; } }
