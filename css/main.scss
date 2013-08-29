@@ -44,6 +44,27 @@ h1{
 	     -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 	        transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
+
+.shopBtn{
+	float: left;
+	margin: 20px 0 0 20px;
+	padding: 0;
+	color: $teal;
+	p{
+		margin: 0;
+		padding: 0;
+		a{
+			color: inherit;
+			margin: 0 0 0 5px;
+			border-bottom: 1px dashed #ccc;
+		}
+		&:hover{
+			color: #ccc;
+			border-bottom: none;
+		}
+	}
+}
+
 #container{
 	//Header Styles
 	header{
@@ -184,6 +205,31 @@ h1{
 		text-align: center;
 		font: normal 14px/18px 'Source Sans Pro', sans-serif;
 		background: white;
+	}
+	
+	.shopBtn{
+		display:block;
+		width: 100%;
+		height: 40px;
+		margin: 0 0 20px 0;
+		padding: 0;
+		color: white;
+		text-align: center;
+		background: #42cdc8;
+		p{
+			margin: 0;
+			padding: 0;
+			line-height: 40px;
+			a{
+				color: inherit;
+				margin: 0 0 0 5px;
+				border-bottom: none;
+			}
+			&:hover{
+				color: white;
+				border-bottom: none;
+			}
+		}
 	}
 
 	#container{
