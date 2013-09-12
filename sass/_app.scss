@@ -1,9 +1,3 @@
-//Fonts ( Source Sans 400,700 )
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
-
-//Colors
-$teal: #42CDC8;
-
 //Basic Global Styles
 body,
 html{
@@ -24,7 +18,7 @@ p{ font-size: 1em; }
 h1{
 	font-size: 2.077em;
 	font-weight: 700;
-	margin: 10px 0 20px 0;
+	margin: 0 0 20px 0;
 	text-transform: uppercase;
 }
 
@@ -128,11 +122,11 @@ h1{
 			width: inherit;
 			margin: 40px 0;
 			h1{
-				line-height: 24px;
+				line-height: 1.846em;
 			}
 			p{
 				margin: 0 0 20px;
-				text-align: left;
+				text-align: center;
 			}
 			img{
 				width: 100%; height: auto;
@@ -186,126 +180,6 @@ h1{
 			//Commenting ( Disqus Plugin )
 			.comments{
 				width: 100%;
-			}
-		}
-	}
-}
-
-@media all and (max-width: 750px) and (min-width: 320px) {
-	//Basic Global Styles
-	body,
-	html{
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		font: normal 14px/18px 'Source Sans Pro', sans-serif;
-		background: white;
-	}
-	
-	.shopBtn{
-		display:block;
-		width: 100%;
-		height: 40px;
-		margin: 0 0 30px 0;
-		padding: 0;
-		color: white;
-		text-align: center;
-		background: black;
-		p{
-			margin: 0;
-			padding: 0;
-			line-height: 40px;
-			a{
-				color: inherit;
-				margin: 0 0 0 5px;
-				border-bottom: none;
-			}
-			&:hover{
-				color: white;
-				border-bottom: none;
-			}
-		}
-	}
-
-	#container{
-		padding: 0 20px;
-
-	  	//Header Styles
-		header{
-			padding: 30px 0 0 0;
-			border-bottom: 1px solid #ccc;
-			.logo{
-				width: 100%;
-				height: auto;
-				margin: 0 0 20px 0;
-				img{
-					width: 100%;
-				}
-			}
-		}
-
-		//Navigation
-		nav{
-			width: 100%;
-			float: none;
-			position: static;
-			margin: 0;
-			padding: 0 0 10px 0;
-			ul{
-				clear: left;
-				float: none;
-			  	list-style: none;
-			  	margin: 0;
-			  	padding: 0;
-			  	position: static;
-			  	left: none;
-			  	text-align: center;
-				li{
-					display: inline;
-				  	float: none;
-				  	list-style: none;
-				  	margin: 0;
-				  	padding: 0;
-				  	position: static;
-				  	right: none;
-					a{
-						display: inline-block;
-						float: none;
-						padding: 0;
-						margin: 0 10px 5px 10px;
-						font-size: 1.2em;
-						font-weight: 400;
-						text-align: center;
-						text-transform: uppercase;
-						border-bottom: none;
-						&:hover{
-							color: $teal;
-							border-bottom: none;
-						}
-					}
-					&:first-child{
-						a{ padding: 0 0 5px 0; }
-					}
-					&:last-child{
-						a{ padding: 0 0 5px 0; }
-					}
-				}
-			}
-		}
-
-
-		//Blog Posts & Styling
-		section{
-			width: 100%;
-			margin: 0 auto;
-			padding: 40px 0 0 0;
-			article{
-				width: inherit;
-				margin: 0 0 20px 0;
-				// img{
-				// 	width: 100%; height: auto;
-				// 	margin: 0 0 10px;
-				// }
 			}
 		}
 	}
