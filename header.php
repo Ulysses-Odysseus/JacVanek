@@ -11,7 +11,6 @@
   <title>Blog Jac Vanek</title>
   
   <!-- Styling -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
 
   <!-- Javascript -->
@@ -29,21 +28,18 @@
     <!-- HEADER 
     ================================================== -->
     <header>
-      <a href="./" title="Jac Vanek" target="_top">
+      <a href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
         <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.png" alt="Jac Vanek Logo">
       </a>
       <!-- Categories Bar 
       ---------------------->
       <nav>
         <ul class="linearTrans">
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
-          <li><a href="">ITEM</a></li>
+            <?php
+            $args = array(
+              'title_li'           => __( '' ),
+            );
+            wp_list_categories($args); ?>
         </ul>
       </nav>
     </header>
