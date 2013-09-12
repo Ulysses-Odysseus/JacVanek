@@ -427,7 +427,7 @@ p {
 h1 {
   font-size: 2.077em;
   font-weight: 700;
-  margin: 0 0 20px 0;
+  margin: 5px 0 20px 0;
   text-transform: uppercase;
 }
 
@@ -542,7 +542,7 @@ h1 {
 }
 /* line 124, ../sass/_app.scss */
 #container section article h1 {
-  line-height: 1.846em;
+  line-height: 30px;
 }
 /* line 127, ../sass/_app.scss */
 #container section article p {
