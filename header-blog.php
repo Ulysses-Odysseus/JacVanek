@@ -23,6 +23,12 @@
 </head>
 
 <body>
+
+  <!-- Back to Shop Button -->
+  <span class="shopBtn linearTrans">
+    <p>&larr;&nbsp;<a href="" target="_top" title="Back to Shop">BACK TO SHOP</a></p>
+  </span>
+
   <div id="container">
   
     <!-- HEADER 
@@ -36,10 +42,11 @@
       <nav>
         <ul class="linearTrans">
             <?php
-            $args = array(
-              'title_li'           => __( '' ),
-            );
-            wp_list_categories($args); ?>
+              $args = array(
+                'title_li' => __('') // Remove default title
+              );
+              wp_list_categories($args);
+            ?>
         </ul>
       </nav>
     </header>
