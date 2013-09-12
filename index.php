@@ -1,6 +1,4 @@
-<?php
-get_header();
-?>
+<?php get_header('blog'); ?>
     
     <!-- Post Content
     ---------------------->
@@ -9,7 +7,7 @@ get_header();
       if(have_posts()) : while (have_posts()) : the_post(); ?>
 
         <article>
-          <time datetime="2009-02-18"><?php the_modified_time('F j, Y'); ?></time>
+          <time datetime="<?php the_date('Y-m-d'); ?>"><?php the_modified_time('F j, Y'); ?></time>
           <h1>
             <a href="<?php the_permalink(); ?>" target="_top">
             <?php the_title(); ?>
@@ -36,4 +34,4 @@ get_header();
     </section>
     <!-- #End: Post Content -->
 
-<?php get_footer(); ?>
+<?php get_footer('blog'); ?>

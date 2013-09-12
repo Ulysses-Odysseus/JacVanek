@@ -1,15 +1,13 @@
-<?php
-get_header();
-?>
+<?php get_header('blog'); ?>
     
-    <!-- Post Content
+    <!-- Single Post Content
     ---------------------->
     <section>
       <?php // Start the Loop
       if(have_posts()) : while(have_posts()) : the_post(); ?>
 
         <article>
-          <time datetime="2009-02-18"><?php the_modified_time('F j, Y'); ?></time>
+          <time datetime="<?php the_date('Y-m-d'); ?>"><?php the_modified_time('F j, Y'); ?></time>
           <h1><?php the_title(); ?></h1>
           <?php the_content(); ?>
           <span class="singleLine"></span>
@@ -25,4 +23,4 @@ get_header();
     </section>
     <!-- #End: Post Content -->
 
-<?php get_footer(); ?>
+<?php get_footer('blog'); ?>
