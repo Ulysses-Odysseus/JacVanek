@@ -29,9 +29,9 @@
 <body>
 
   <!-- Back to Shop Button -->
-  <!-- <span class="shopBtn linearTrans">
+  <span class="shopBtn linearTrans">
     <p>&larr;&nbsp;<a href="" target="_top" title="Back to Shop">BACK TO SHOP</a></p>
-  </span> -->
+  </span>
 
   <div id="container">
   

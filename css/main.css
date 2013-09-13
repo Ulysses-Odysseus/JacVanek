@@ -464,19 +464,25 @@ h1 {
   border-bottom: none;
 }
 
-/* line 56, ../sass/_app.scss */
+/* line 54, ../sass/_app.scss */
+.wrapper {
+  width: 100%;
+  background: black;
+}
+
+/* line 61, ../sass/_app.scss */
 #container header {
   text-align: center;
   padding: 50px 0 30px 0;
 }
-/* line 59, ../sass/_app.scss */
+/* line 64, ../sass/_app.scss */
 #container header .logo {
   display: block;
   width: 563px;
   height: 80px;
   margin: 0 auto;
 }
-/* line 68, ../sass/_app.scss */
+/* line 73, ../sass/_app.scss */
 #container nav {
   width: 100%;
   float: left;
@@ -484,7 +490,7 @@ h1 {
   margin: 30px 0 40px 0;
   padding: 0;
 }
-/* line 74, ../sass/_app.scss */
+/* line 79, ../sass/_app.scss */
 #container nav ul {
   clear: left;
   float: left;
@@ -495,7 +501,7 @@ h1 {
   left: 50%;
   text-align: center;
 }
-/* line 83, ../sass/_app.scss */
+/* line 88, ../sass/_app.scss */
 #container nav ul li {
   display: inline-block;
   float: left;
@@ -504,7 +510,7 @@ h1 {
   position: relative;
   right: 50%;
 }
-/* line 90, ../sass/_app.scss */
+/* line 95, ../sass/_app.scss */
 #container nav ul li a {
   display: inline-block;
   float: left;
@@ -516,46 +522,46 @@ h1 {
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
 }
-/* line 100, ../sass/_app.scss */
+/* line 105, ../sass/_app.scss */
 #container nav ul li a:hover {
   color: #42cdc8;
   border-bottom: 1px solid #42cdc8;
 }
-/* line 106, ../sass/_app.scss */
+/* line 111, ../sass/_app.scss */
 #container nav ul li:first-child a {
   padding: 0 35px 5px 0;
 }
-/* line 109, ../sass/_app.scss */
+/* line 114, ../sass/_app.scss */
 #container nav ul li:last-child a {
   padding: 0 0 5px 35px;
 }
-/* line 117, ../sass/_app.scss */
+/* line 122, ../sass/_app.scss */
 #container section {
   width: 660px;
   margin: 0 auto;
   padding: 0 0 40px 0;
 }
-/* line 121, ../sass/_app.scss */
+/* line 126, ../sass/_app.scss */
 #container section article {
   width: inherit;
   margin: 40px 0;
 }
-/* line 124, ../sass/_app.scss */
+/* line 129, ../sass/_app.scss */
 #container section article h1 {
   line-height: 30px;
 }
-/* line 127, ../sass/_app.scss */
+/* line 132, ../sass/_app.scss */
 #container section article p {
   margin: 0 0 20px;
   text-align: center;
 }
-/* line 131, ../sass/_app.scss */
+/* line 136, ../sass/_app.scss */
 #container section article img {
   width: 100%;
   height: auto;
   margin: 0 0 20px;
 }
-/* line 135, ../sass/_app.scss */
+/* line 140, ../sass/_app.scss */
 #container section article time {
   color: #42cdc8;
   margin: 0;
@@ -566,7 +572,7 @@ h1 {
   text-transform: uppercase;
   background: url(../img/icon-clock.svg) no-repeat left;
 }
-/* line 147, ../sass/_app.scss */
+/* line 152, ../sass/_app.scss */
 #container section article .count {
   width: 100%;
   margin: 40px auto 0 auto;
@@ -575,11 +581,11 @@ h1 {
   word-spacing: 5px;
   text-transform: uppercase;
 }
-/* line 155, ../sass/_app.scss */
+/* line 160, ../sass/_app.scss */
 #container section article .count a:hover {
   color: #42cdc8;
 }
-/* line 163, ../sass/_app.scss */
+/* line 168, ../sass/_app.scss */
 #container section article .line,
 #container section article .singleLine {
   display: block;
@@ -589,17 +595,17 @@ h1 {
   margin-right: auto;
   border-bottom: 1px solid #cccccc;
 }
-/* line 171, ../sass/_app.scss */
+/* line 176, ../sass/_app.scss */
 #container section article .line {
   margin-top: 10px;
   margin-bottom: 60px;
 }
-/* line 175, ../sass/_app.scss */
+/* line 180, ../sass/_app.scss */
 #container section article .singleLine {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 181, ../sass/_app.scss */
+/* line 186, ../sass/_app.scss */
 #container section article .comments {
   width: 100%;
 }

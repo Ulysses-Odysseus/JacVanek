@@ -1,4 +1,6 @@
-<?php get_header('blog'); ?>
+<?php
+// This is the blog landing page
+get_header('blog'); ?>
     
     <!-- Post Content
     ---------------------->

@@ -23,6 +23,10 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    Hi
+  </div>
+
   <div id="container">
   
     <!-- HEADER 
