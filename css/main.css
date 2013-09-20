@@ -402,6 +402,56 @@ table {
   border-spacing: 0;
 }
 
+/* line 388, ../sass/_normalize.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 397, ../sass/_normalize.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 401, ../sass/_normalize.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 405, ../sass/_normalize.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 407, ../sass/_normalize.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 416, ../sass/_normalize.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 420, ../sass/_normalize.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 424, ../sass/_normalize.scss */
+* html .clearfix {
+  height: 1%;
+}
+
 /* line 3, ../sass/_app.scss */
 body,
 html {
@@ -467,31 +517,153 @@ h1 {
 /* line 54, ../sass/_app.scss */
 .wrapper {
   width: 100%;
+  height: 40px;
   background: black;
 }
+/* line 59, ../sass/_app.scss */
+.wrapper input[type="text"],
+.wrapper input[type="submit"] {
+  float: left;
+  margin: 0;
+  line-height: 20px;
+  color: #ccc;
+  background: #222;
+  border: none;
+}
+/* line 70, ../sass/_app.scss */
+.wrapper input[type="text"] {
+  padding: 10px 20px;
+}
+/* line 74, ../sass/_app.scss */
+.wrapper input[type="submit"] {
+  font-size: .95em;
+  padding: 10px 15px;
+  background: #333;
+  border-left: none;
+}
+/* line 82, ../sass/_app.scss */
+.wrapper .left {
+  float: left;
+}
+/* line 87, ../sass/_app.scss */
+.wrapper .right {
+  height: 40px;
+  float: right;
+}
+/* line 90, ../sass/_app.scss */
+.wrapper .right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 94, ../sass/_app.scss */
+.wrapper .right ul li {
+  float: left;
+  margin: 10px 0 10px 10px;
+  padding: 0 10px;
+  line-height: 20px;
+  border-right: 1px solid #666666;
+}
+/* line 100, ../sass/_app.scss */
+.wrapper .right ul li a {
+  color: #ccc;
+  font-size: .85em;
+}
+/* line 103, ../sass/_app.scss */
+.wrapper .right ul li a:hover {
+  color: white;
+}
+/* line 107, ../sass/_app.scss */
+.wrapper .right ul li:last-child {
+  border: none;
+}
+/* line 114, ../sass/_app.scss */
+.wrapper .right .social {
+  height: 40px;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+/* line 118, ../sass/_app.scss */
+.wrapper .right .social li {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  border: none !important;
+}
+/* line 124, ../sass/_app.scss */
+.wrapper .right .social li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -999em;
+  opacity: .3;
+}
+/* line 131, ../sass/_app.scss */
+.wrapper .right .social li a:hover {
+  opacity: .6;
+}
+/* line 135, ../sass/_app.scss */
+.wrapper .right .social li .inst {
+  background: url("../img/icon-instagram.svg") no-repeat center;
+}
+/* line 136, ../sass/_app.scss */
+.wrapper .right .social li .twit {
+  background: url("../img/icon-twitter.svg") no-repeat center;
+}
+/* line 137, ../sass/_app.scss */
+.wrapper .right .social li .face {
+  background: url("../img/icon-facebook.svg") no-repeat center;
+}
+/* line 142, ../sass/_app.scss */
+.wrapper .right .search {
+  border: none;
+  margin: 0 0 0 10px;
+  background: #222;
+}
+/* line 146, ../sass/_app.scss */
+.wrapper .right .search input[type="text"] {
+  border-right: none;
+}
+/* line 149, ../sass/_app.scss */
+.wrapper .right .search input[type="submit"] {
+  display: block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-indent: -999em;
+  opacity: .5;
+  background: #222222 url("../img/search.svg") no-repeat top left;
+}
 
-/* line 61, ../sass/_app.scss */
-#container header {
+/* line 162, ../sass/_app.scss */
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* line 165, ../sass/_app.scss */
+.container header {
   text-align: center;
   padding: 50px 0 30px 0;
 }
-/* line 64, ../sass/_app.scss */
-#container header .logo {
+/* line 168, ../sass/_app.scss */
+.container header .logo {
   display: block;
   width: 563px;
   height: 80px;
   margin: 0 auto;
 }
-/* line 73, ../sass/_app.scss */
-#container nav {
+/* line 177, ../sass/_app.scss */
+.container nav {
   width: 100%;
   float: left;
   position: relative;
   margin: 30px 0 40px 0;
   padding: 0;
 }
-/* line 79, ../sass/_app.scss */
-#container nav ul {
+/* line 183, ../sass/_app.scss */
+.container nav ul {
   clear: left;
   float: left;
   list-style: none;
@@ -501,8 +673,8 @@ h1 {
   left: 50%;
   text-align: center;
 }
-/* line 88, ../sass/_app.scss */
-#container nav ul li {
+/* line 192, ../sass/_app.scss */
+.container nav ul li {
   display: inline-block;
   float: left;
   margin: 0;
@@ -510,8 +682,8 @@ h1 {
   position: relative;
   right: 50%;
 }
-/* line 95, ../sass/_app.scss */
-#container nav ul li a {
+/* line 199, ../sass/_app.scss */
+.container nav ul li a {
   display: inline-block;
   float: left;
   margin: 0;
@@ -522,47 +694,47 @@ h1 {
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
 }
-/* line 105, ../sass/_app.scss */
-#container nav ul li a:hover {
+/* line 209, ../sass/_app.scss */
+.container nav ul li a:hover {
   color: #42cdc8;
   border-bottom: 1px solid #42cdc8;
 }
-/* line 111, ../sass/_app.scss */
-#container nav ul li:first-child a {
+/* line 215, ../sass/_app.scss */
+.container nav ul li:first-child a {
   padding: 0 35px 5px 0;
 }
-/* line 114, ../sass/_app.scss */
-#container nav ul li:last-child a {
+/* line 218, ../sass/_app.scss */
+.container nav ul li:last-child a {
   padding: 0 0 5px 35px;
 }
-/* line 122, ../sass/_app.scss */
-#container section {
+/* line 226, ../sass/_app.scss */
+.container section {
   width: 660px;
   margin: 0 auto;
   padding: 0 0 40px 0;
 }
-/* line 126, ../sass/_app.scss */
-#container section article {
+/* line 230, ../sass/_app.scss */
+.container section article {
   width: inherit;
   margin: 40px 0;
 }
-/* line 129, ../sass/_app.scss */
-#container section article h1 {
+/* line 233, ../sass/_app.scss */
+.container section article h1 {
   line-height: 30px;
 }
-/* line 132, ../sass/_app.scss */
-#container section article p {
+/* line 236, ../sass/_app.scss */
+.container section article p {
   margin: 0 0 20px;
   text-align: center;
 }
-/* line 136, ../sass/_app.scss */
-#container section article img {
+/* line 240, ../sass/_app.scss */
+.container section article img {
   width: 100%;
   height: auto;
   margin: 0 0 20px;
 }
-/* line 140, ../sass/_app.scss */
-#container section article time {
+/* line 244, ../sass/_app.scss */
+.container section article time {
   color: #42cdc8;
   margin: 0;
   padding: 10px 0 10px 25px;
@@ -570,10 +742,10 @@ h1 {
   line-height: 18px;
   word-spacing: 2px;
   text-transform: uppercase;
-  background: url(../img/icon-clock.svg) no-repeat left;
+  background: url("../img/icon-clock.svg") no-repeat left;
 }
-/* line 152, ../sass/_app.scss */
-#container section article .count {
+/* line 256, ../sass/_app.scss */
+.container section article .count {
   width: 100%;
   margin: 40px auto 0 auto;
   font-weight: 400;
@@ -581,13 +753,13 @@ h1 {
   word-spacing: 5px;
   text-transform: uppercase;
 }
-/* line 160, ../sass/_app.scss */
-#container section article .count a:hover {
+/* line 264, ../sass/_app.scss */
+.container section article .count a:hover {
   color: #42cdc8;
 }
-/* line 168, ../sass/_app.scss */
-#container section article .line,
-#container section article .singleLine {
+/* line 272, ../sass/_app.scss */
+.container section article .line,
+.container section article .singleLine {
   display: block;
   width: 25%;
   height: 1px;
@@ -595,19 +767,61 @@ h1 {
   margin-right: auto;
   border-bottom: 1px solid #cccccc;
 }
-/* line 176, ../sass/_app.scss */
-#container section article .line {
+/* line 280, ../sass/_app.scss */
+.container section article .line {
   margin-top: 10px;
   margin-bottom: 60px;
 }
-/* line 180, ../sass/_app.scss */
-#container section article .singleLine {
+/* line 284, ../sass/_app.scss */
+.container section article .singleLine {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 186, ../sass/_app.scss */
-#container section article .comments {
+/* line 290, ../sass/_app.scss */
+.container section article .comments {
   width: 100%;
+}
+
+/* line 297, ../sass/_app.scss */
+footer {
+  width: 100%;
+  color: #ccc;
+  margin: 0;
+  padding: 40px 0;
+  text-align: left;
+  background: black;
+}
+/* line 304, ../sass/_app.scss */
+footer .left {
+  float: left;
+}
+/* line 306, ../sass/_app.scss */
+footer .left .block {
+  width: 200px;
+  float: left;
+}
+/* line 309, ../sass/_app.scss */
+footer .left .block h4 {
+  font-size: 1.077em;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* line 314, ../sass/_app.scss */
+footer .left .block ul {
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 319, ../sass/_app.scss */
+footer .left .block ul li {
+  margin: 0;
+  padding: 0;
+  font-size: 0.923em;
+}
+/* line 327, ../sass/_app.scss */
+footer .right {
+  float: right;
 }
 
 @media all and (max-width: 750px) and (min-width: 320px) {
