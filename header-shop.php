@@ -24,7 +24,7 @@
     <!-- Sub Header -->
     <div class="wrapper clearfix">
         <div class="container">
-            <div class="left">
+            <div class="newsletter left">
                 <form>
                     <input class="" type="text" placeholder="Enter Email...">
                     <input class="" type="submit" value="SIGN UP">
@@ -63,8 +63,8 @@
             <nav>
                 <ul class="linearTrans">
                     <?php
-                        $args = array(
-                            'title_li' => __('') // Remove default title
+                    $args = array(
+                        'title_li' => __('') // Remove default title
                     );
                     wp_list_categories($args);
                     ?>

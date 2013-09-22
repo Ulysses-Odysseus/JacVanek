@@ -481,7 +481,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 26, ../sass/_app.scss */
+/* line 27, ../sass/_app.scss */
 .linearTrans a {
   -webkit-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
   -moz-transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
@@ -490,39 +490,35 @@ h1 {
   transition: all 200ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
 }
 
-/* line 34, ../sass/_app.scss */
+/* line 37, ../sass/_app.scss */
 .shopBtn {
   float: left;
   margin: 20px 0 0 20px;
   padding: 0;
   color: #42cdc8;
 }
-/* line 39, ../sass/_app.scss */
+/* line 42, ../sass/_app.scss */
 .shopBtn p {
   margin: 0;
   padding: 0;
 }
-/* line 42, ../sass/_app.scss */
+/* line 45, ../sass/_app.scss */
 .shopBtn p a {
   color: inherit;
   margin: 0 0 0 5px;
   border-bottom: 1px dashed #cccccc;
 }
-/* line 47, ../sass/_app.scss */
+/* line 50, ../sass/_app.scss */
 .shopBtn p:hover {
   color: #ccc;
   border-bottom: none;
 }
 
-/* line 54, ../sass/_app.scss */
-.wrapper {
-  width: 100%;
-  height: 40px;
-  background: black;
-}
-/* line 59, ../sass/_app.scss */
-.wrapper input[type="text"],
-.wrapper input[type="submit"] {
+/* line 62, ../sass/_app.scss */
+.search input[type="text"],
+.search input[type="submit"],
+.newsletter input[type="text"],
+.newsletter input[type="submit"] {
   float: left;
   margin: 0;
   line-height: 20px;
@@ -531,32 +527,41 @@ h1 {
   border: none;
 }
 /* line 70, ../sass/_app.scss */
-.wrapper input[type="text"] {
+.search input[type="text"],
+.newsletter input[type="text"] {
   padding: 10px 20px;
 }
-/* line 74, ../sass/_app.scss */
-.wrapper input[type="submit"] {
+/* line 73, ../sass/_app.scss */
+.search input[type="submit"],
+.newsletter input[type="submit"] {
   font-size: .95em;
   padding: 10px 15px;
   background: #333;
   border-left: none;
 }
-/* line 82, ../sass/_app.scss */
+
+/* line 83, ../sass/_app.scss */
+.wrapper {
+  width: 100%;
+  height: 40px;
+  background: black;
+}
+/* line 89, ../sass/_app.scss */
 .wrapper .left {
   float: left;
 }
-/* line 87, ../sass/_app.scss */
+/* line 94, ../sass/_app.scss */
 .wrapper .right {
   height: 40px;
   float: right;
 }
-/* line 90, ../sass/_app.scss */
+/* line 97, ../sass/_app.scss */
 .wrapper .right ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 94, ../sass/_app.scss */
+/* line 101, ../sass/_app.scss */
 .wrapper .right ul li {
   float: left;
   margin: 10px 0 10px 10px;
@@ -564,26 +569,26 @@ h1 {
   line-height: 20px;
   border-right: 1px solid #666666;
 }
-/* line 100, ../sass/_app.scss */
+/* line 107, ../sass/_app.scss */
 .wrapper .right ul li a {
   color: #ccc;
   font-size: .85em;
 }
-/* line 103, ../sass/_app.scss */
+/* line 110, ../sass/_app.scss */
 .wrapper .right ul li a:hover {
   color: white;
 }
-/* line 107, ../sass/_app.scss */
+/* line 114, ../sass/_app.scss */
 .wrapper .right ul li:last-child {
   border: none;
 }
-/* line 114, ../sass/_app.scss */
+/* line 121, ../sass/_app.scss */
 .wrapper .right .social {
   height: 40px;
   margin: 0 0 0 10px;
   padding: 0;
 }
-/* line 118, ../sass/_app.scss */
+/* line 125, ../sass/_app.scss */
 .wrapper .right .social li {
   width: 20px;
   height: 20px;
@@ -591,7 +596,7 @@ h1 {
   overflow: hidden;
   border: none !important;
 }
-/* line 124, ../sass/_app.scss */
+/* line 131, ../sass/_app.scss */
 .wrapper .right .social li a {
   display: block;
   width: 20px;
@@ -600,33 +605,33 @@ h1 {
   text-indent: -999em;
   opacity: .3;
 }
-/* line 131, ../sass/_app.scss */
+/* line 138, ../sass/_app.scss */
 .wrapper .right .social li a:hover {
   opacity: .6;
 }
-/* line 135, ../sass/_app.scss */
+/* line 142, ../sass/_app.scss */
 .wrapper .right .social li .inst {
   background: url("../img/icon-instagram.svg") no-repeat center;
 }
-/* line 136, ../sass/_app.scss */
+/* line 143, ../sass/_app.scss */
 .wrapper .right .social li .twit {
   background: url("../img/icon-twitter.svg") no-repeat center;
 }
-/* line 137, ../sass/_app.scss */
+/* line 144, ../sass/_app.scss */
 .wrapper .right .social li .face {
   background: url("../img/icon-facebook.svg") no-repeat center;
 }
-/* line 142, ../sass/_app.scss */
+/* line 149, ../sass/_app.scss */
 .wrapper .right .search {
   border: none;
   margin: 0 0 0 10px;
   background: #222;
 }
-/* line 146, ../sass/_app.scss */
+/* line 153, ../sass/_app.scss */
 .wrapper .right .search input[type="text"] {
   border-right: none;
 }
-/* line 149, ../sass/_app.scss */
+/* line 156, ../sass/_app.scss */
 .wrapper .right .search input[type="submit"] {
   display: block;
   width: 40px;
@@ -637,32 +642,32 @@ h1 {
   background: #222222 url("../img/search.svg") no-repeat top left;
 }
 
-/* line 162, ../sass/_app.scss */
+/* line 170, ../sass/_app.scss */
 .container {
   width: 1100px;
   margin: 0 auto;
 }
-/* line 165, ../sass/_app.scss */
+/* line 173, ../sass/_app.scss */
 .container header {
   text-align: center;
   padding: 50px 0 30px 0;
 }
-/* line 168, ../sass/_app.scss */
+/* line 176, ../sass/_app.scss */
 .container header .logo {
   display: block;
   width: 563px;
   height: 80px;
   margin: 0 auto;
 }
-/* line 177, ../sass/_app.scss */
+/* line 185, ../sass/_app.scss */
 .container nav {
   width: 100%;
   float: left;
   position: relative;
-  margin: 30px 0 40px 0;
+  margin: 30px 0 10px 0;
   padding: 0;
 }
-/* line 183, ../sass/_app.scss */
+/* line 191, ../sass/_app.scss */
 .container nav ul {
   clear: left;
   float: left;
@@ -673,7 +678,7 @@ h1 {
   left: 50%;
   text-align: center;
 }
-/* line 192, ../sass/_app.scss */
+/* line 200, ../sass/_app.scss */
 .container nav ul li {
   display: inline-block;
   float: left;
@@ -682,7 +687,7 @@ h1 {
   position: relative;
   right: 50%;
 }
-/* line 199, ../sass/_app.scss */
+/* line 207, ../sass/_app.scss */
 .container nav ul li a {
   display: inline-block;
   float: left;
@@ -694,46 +699,46 @@ h1 {
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
 }
-/* line 209, ../sass/_app.scss */
+/* line 217, ../sass/_app.scss */
 .container nav ul li a:hover {
   color: #42cdc8;
   border-bottom: 1px solid #42cdc8;
 }
-/* line 215, ../sass/_app.scss */
+/* line 223, ../sass/_app.scss */
 .container nav ul li:first-child a {
   padding: 0 35px 5px 0;
 }
-/* line 218, ../sass/_app.scss */
+/* line 226, ../sass/_app.scss */
 .container nav ul li:last-child a {
   padding: 0 0 5px 35px;
 }
-/* line 226, ../sass/_app.scss */
+/* line 234, ../sass/_app.scss */
 .container section {
   width: 660px;
   margin: 0 auto;
   padding: 0 0 40px 0;
 }
-/* line 230, ../sass/_app.scss */
+/* line 238, ../sass/_app.scss */
 .container section article {
   width: inherit;
   margin: 40px 0;
 }
-/* line 233, ../sass/_app.scss */
+/* line 241, ../sass/_app.scss */
 .container section article h1 {
   line-height: 30px;
 }
-/* line 236, ../sass/_app.scss */
+/* line 244, ../sass/_app.scss */
 .container section article p {
   margin: 0 0 20px;
   text-align: center;
 }
-/* line 240, ../sass/_app.scss */
+/* line 248, ../sass/_app.scss */
 .container section article img {
   width: 100%;
   height: auto;
   margin: 0 0 20px;
 }
-/* line 244, ../sass/_app.scss */
+/* line 252, ../sass/_app.scss */
 .container section article time {
   color: #42cdc8;
   margin: 0;
@@ -744,7 +749,7 @@ h1 {
   text-transform: uppercase;
   background: url("../img/icon-clock.svg") no-repeat left;
 }
-/* line 256, ../sass/_app.scss */
+/* line 264, ../sass/_app.scss */
 .container section article .count {
   width: 100%;
   margin: 40px auto 0 auto;
@@ -753,11 +758,11 @@ h1 {
   word-spacing: 5px;
   text-transform: uppercase;
 }
-/* line 264, ../sass/_app.scss */
+/* line 272, ../sass/_app.scss */
 .container section article .count a:hover {
   color: #42cdc8;
 }
-/* line 272, ../sass/_app.scss */
+/* line 280, ../sass/_app.scss */
 .container section article .line,
 .container section article .singleLine {
   display: block;
@@ -767,61 +772,103 @@ h1 {
   margin-right: auto;
   border-bottom: 1px solid #cccccc;
 }
-/* line 280, ../sass/_app.scss */
+/* line 288, ../sass/_app.scss */
 .container section article .line {
   margin-top: 10px;
   margin-bottom: 60px;
 }
-/* line 284, ../sass/_app.scss */
+/* line 292, ../sass/_app.scss */
 .container section article .singleLine {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 290, ../sass/_app.scss */
+/* line 298, ../sass/_app.scss */
 .container section article .comments {
   width: 100%;
 }
 
-/* line 297, ../sass/_app.scss */
+/* line 307, ../sass/_app.scss */
 footer {
   width: 100%;
-  color: #ccc;
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 0 30px 0;
+  color: #ccc;
   text-align: left;
   background: black;
 }
-/* line 304, ../sass/_app.scss */
+/* line 314, ../sass/_app.scss */
+footer h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.154em;
+  text-transform: uppercase;
+}
+/* line 319, ../sass/_app.scss */
 footer .left {
   float: left;
 }
-/* line 306, ../sass/_app.scss */
+/* line 321, ../sass/_app.scss */
 footer .left .block {
   width: 200px;
   float: left;
 }
-/* line 309, ../sass/_app.scss */
-footer .left .block h4 {
-  font-size: 1.077em;
-  text-transform: uppercase;
-  margin: 0;
-}
-/* line 314, ../sass/_app.scss */
+/* line 324, ../sass/_app.scss */
 footer .left .block ul {
   width: inherit;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 319, ../sass/_app.scss */
+/* line 329, ../sass/_app.scss */
 footer .left .block ul li {
   margin: 0;
   padding: 0;
-  font-size: 0.923em;
+  font-size: 1em;
 }
-/* line 327, ../sass/_app.scss */
+/* line 333, ../sass/_app.scss */
+footer .left .block ul li a {
+  color: #999;
+}
+/* line 335, ../sass/_app.scss */
+footer .left .block ul li a:hover {
+  color: white;
+}
+/* line 343, ../sass/_app.scss */
 footer .right {
   float: right;
+  text-align: right;
+}
+/* line 346, ../sass/_app.scss */
+footer .right input[type="text"] {
+  color: #222;
+  background: #e1e1e1;
+}
+/* line 350, ../sass/_app.scss */
+footer .right input[type="submit"] {
+  font-weight: bold;
+}
+/* line 354, ../sass/_app.scss */
+footer .row {
+  width: 100%;
+  margin: 51px 0 0 0;
+  color: #999;
+}
+/* line 358, ../sass/_app.scss */
+footer .row p {
+  margin: 0;
+  padding: 0;
+}
+/* line 361, ../sass/_app.scss */
+footer .row p a {
+  color: #448ccb;
+  font-style: italic;
+}
+
+/* line 369, ../sass/_app.scss */
+.slider {
+  width: 100%;
+  height: 540px;
+  margin-bottom: 20px;
+  background: #ccc;
 }
 
 @media all and (max-width: 750px) and (min-width: 320px) {

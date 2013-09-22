@@ -22,6 +22,7 @@ h1{
 	text-transform: uppercase;
 }
 
+
 //Linear Transition ( On "href" only )
 .linearTrans a{
 	-webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
@@ -31,6 +32,8 @@ h1{
 	        transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 
+
+//Shop button on blog
 .shopBtn{
 	float: left;
 	margin: 20px 0 0 20px;
@@ -51,10 +54,10 @@ h1{
 	}
 }
 
-.wrapper{
-	width: 100%;
-	height: 40px;
-	background: black;
+
+//Form styles
+.search,
+.newsletter{
 	input[type="text"],
 	input[type="submit"]{
 		float: left;
@@ -63,13 +66,9 @@ h1{
 		color: #ccc;
 		background: #222;
 		border: none;
-		// border-top: none;
-		// border-bottom: none;
-		// border-right: 1px solid #666;
 	}
 	input[type="text"]{
 		padding: 10px 20px;
-		//border-left: 1px solid #666;
 	}
 	input[type="submit"]{
 		font-size: .95em;
@@ -77,6 +76,14 @@ h1{
 		background: #333;
 		border-left: none;
 	}
+}
+
+
+//Sub header start
+.wrapper{
+	width: 100%;
+	height: 40px;
+	background: black;
 
 	//Left side of wrapper
 	.left{
@@ -159,6 +166,7 @@ h1{
 	}
 }
 
+
 .container{
 	width: 1100px;
 	margin: 0 auto;
@@ -178,7 +186,7 @@ h1{
 		width: 100%;
 		float: left;
 		position: relative;
-		margin: 30px 0 40px 0;
+		margin: 30px 0 10px 0;
 		padding: 0;
 		ul{
 			clear: left;
@@ -294,23 +302,25 @@ h1{
 	}
 }
 
+
+//Footer and all it's glory
 footer{
 	width: 100%;
-	color: #ccc;
 	margin: 0;
-	padding: 40px 0;
+	padding: 40px 0 30px 0;
+	color: #ccc;
 	text-align: left;
 	background: black;
+	h4{
+		margin: 0 0 5px 0;
+		font-size: 1.154em;
+		text-transform: uppercase;
+	}
 	.left{
 		float: left;
 		.block{
 			width: 200px;
 			float: left;
-			h4{
-				font-size: 1.077em;
-				text-transform: uppercase;
-				margin: 0;
-			}
 			ul{
 				width: inherit;
 				margin: 0;
@@ -319,12 +329,46 @@ footer{
 				li{
 					margin: 0;
 					padding: 0;
-					font-size: 0.923em;
+					font-size: 1em;
+					a{
+						color: #999;
+						&:hover{
+							color: white;
+						}
+					}
 				}
 			}
 		}
 	}
 	.right{
 		float: right;
+		text-align: right;
+		input[type="text"]{
+			color: #222;
+			background: #e1e1e1;
+		}
+		input[type="submit"]{
+			font-weight: bold;
+		}
 	}
+	.row{
+		width: 100%;
+		margin: 51px 0 0 0;
+		color: #999;
+		p{
+			margin: 0;
+			padding: 0;
+			a{
+				color: #448ccb;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.slider{
+	width: 100%;
+	height: 540px;
+	margin-bottom: 20px;
+	background: #ccc;
 }
