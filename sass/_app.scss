@@ -79,6 +79,18 @@ h1{
 }
 
 
+//Line elements
+.line,
+.singleLine{
+	display: block;
+	width: 25%;
+	height: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #ccc;
+}
+
+
 //Sub header start
 .wrapper{
 	width: 100%;
@@ -276,15 +288,6 @@ h1{
 			}
 
 			//Post Separation
-			.line,
-			.singleLine{
-				display: block;
-				width: 25%;
-				height: 1px;
-				margin-left: auto;
-				margin-right: auto;
-				border-bottom: 1px solid #ccc;
-			}
 			.line{
 				margin-top: 10px;
 				margin-bottom: 60px;

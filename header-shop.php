@@ -12,6 +12,10 @@
     <!-- Styling -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
 
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
+    <![endif]-->
+
     <!-- Javascript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>!window.jQuery && document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
@@ -58,7 +62,7 @@
             <a href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
-            <!-- Categories Bar 
+            <!-- Menu 
             ---------------------->
             <nav>
                 <ul class="linearTrans">
