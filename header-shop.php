@@ -67,10 +67,12 @@
             <nav>
                 <ul class="linearTrans">
                     <?php
+                    $excl = '13,14,15,16,17,18,19,20,21,22,23';
                     $args = array(
-                        'title_li' => __('') // Remove default title
+                        'title_li' => __(''), // Remove default title
+                        'exclude'  => $excl
                     );
-                    wp_list_categories($args);
+                    wp_list_pages($args);
                     ?>
                 </ul>
             </nav>
