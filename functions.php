@@ -49,3 +49,5 @@ function my_theme_wrapper_end() {
 
 // Declare woocommerce support
 add_theme_support( 'woocommerce' );
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );

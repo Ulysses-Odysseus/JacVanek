@@ -21,4 +21,24 @@
 	width: 80%;
 	float: left;
 	text-align: left;
+
+	//Breadcrumbs
+	.woocommerce-breadcrumb{
+		margin: 8px 0 20px 0;
+		padding: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+		a{
+			font-weight: normal;
+		}
+	}
+
+	//Product list
+	ul.products{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+		}
+	}
 }
