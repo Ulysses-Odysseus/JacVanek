@@ -877,9 +877,23 @@ footer .row p a {
 #sidebar {
   width: 20%;
   float: left;
+  text-align: left;
+}
+/* line 6, ../sass/_shop.scss */
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 9, ../sass/_shop.scss */
+#sidebar ul li {
+  list-style: none;
+}
+/* line 12, ../sass/_shop.scss */
+#sidebar ul li a:hover {
+  color: #42cdc8;
 }
 
-/* line 7, ../sass/_shop.scss */
+/* line 20, ../sass/_shop.scss */
 #main {
   width: 80%;
   float: left;

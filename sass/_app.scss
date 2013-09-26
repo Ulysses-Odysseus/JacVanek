@@ -97,12 +97,12 @@ h1{
 	height: 40px;
 	background: black;
 
-	//Left side of wrapper
+	//Left side of sub header
 	.left{
 		float: left;
 	}
 
-	//Right side of wrapper
+	//Right side of sub header
 	.right{
 		height: 40px;
 		float: right;
@@ -157,7 +157,7 @@ h1{
 			}
 		}
 
-		//Search In Wrapper
+		//Search bar in sub header
 		.search{
 			border: none;
 			margin: 0 0 0 10px;

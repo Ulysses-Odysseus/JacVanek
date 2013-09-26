@@ -37,8 +37,8 @@
             <div class="right">
                 <ul class="left">
                     <li><a href="" target="_top">CUSTOMER CARE</a></li>
-                    <li><a href="" target="_top">MY ACCOUNT</a></li>
-                    <li><a class="cart" href="" target="_top">0 ITEMS</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/account" target="_top">MY ACCOUNT</a></li>
+                    <li><a class="cart" href="<?php echo get_home_url(); ?>/shop" target="_top">0 ITEMS</a></li>
                 </ul>
                 <div class="search left">
                     <form>
@@ -66,7 +66,7 @@
             ---------------------->
             <nav>
                 <ul class="linearTrans">
-                    <?php
+                    <?php //List pages
                     $excl = '13,14,15,16,17,18,19,20,21,22,23';
                     $args = array(
                         'title_li' => __(''), // Remove default title

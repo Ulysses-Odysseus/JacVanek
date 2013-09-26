@@ -2,6 +2,19 @@
 #sidebar{
 	width: 20%;
 	float: left;
+	text-align: left;
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+			a{
+				&:hover{
+					color: $teal;
+				}
+			}
+		}
+	}
 }
 
 #main{
