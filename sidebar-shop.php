@@ -1,6 +1,6 @@
 <!-- Shop Sidebar -->
 <aside id="sidebar">
-	<h4>SHOP BY</h4>
+	<h4>SHOP BY:</h4>
 	<ul class="linearTrans">
         <?php //List categories
         $args = array(

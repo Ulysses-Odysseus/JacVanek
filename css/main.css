@@ -875,49 +875,148 @@ footer .row p a {
 /* Start Shop Styling */
 /* line 2, ../sass/_shop.scss */
 #sidebar {
-  width: 20%;
+  width: 160px;
   float: left;
   text-align: left;
 }
 /* line 6, ../sass/_shop.scss */
+#sidebar h4 {
+  margin: 44px 0 5px 0;
+}
+/* line 9, ../sass/_shop.scss */
 #sidebar ul {
   margin: 0;
   padding: 0;
 }
-/* line 9, ../sass/_shop.scss */
+/* line 12, ../sass/_shop.scss */
 #sidebar ul li {
   list-style: none;
 }
-/* line 12, ../sass/_shop.scss */
+/* line 14, ../sass/_shop.scss */
+#sidebar ul li a {
+  color: black;
+}
+/* line 16, ../sass/_shop.scss */
 #sidebar ul li a:hover {
   color: #42cdc8;
 }
 
-/* line 20, ../sass/_shop.scss */
+/* line 24, ../sass/_shop.scss */
 #main {
-  width: 80%;
+  width: 940px;
   float: left;
   text-align: left;
 }
-/* line 26, ../sass/_shop.scss */
+/* line 29, ../sass/_shop.scss */
+#main .tabs {
+  display: none;
+}
+/* line 34, ../sass/_shop.scss */
 #main .woocommerce-breadcrumb {
   margin: 8px 0 20px 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 31, ../sass/_shop.scss */
+/* line 39, ../sass/_shop.scss */
 #main .woocommerce-breadcrumb a {
   font-weight: normal;
 }
-/* line 37, ../sass/_shop.scss */
+/* line 45, ../sass/_shop.scss */
 #main ul.products {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
-/* line 40, ../sass/_shop.scss */
+/* line 49, ../sass/_shop.scss */
 #main ul.products li {
+  width: 220px;
+  float: left;
+  margin: 0 0 30px 20px;
+  text-align: left;
   list-style: none;
+}
+/* line 55, ../sass/_shop.scss */
+#main ul.products li p {
+  margin: 0;
+  text-transform: capitalize;
+}
+/* line 60, ../sass/_shop.scss */
+#main ul.products .first {
+  margin: 0;
+}
+/* line 66, ../sass/_shop.scss */
+#main .images {
+  float: left;
+}
+/* line 68, ../sass/_shop.scss */
+#main .images a {
+  margin: 0 20px 0 0;
+}
+/* line 71, ../sass/_shop.scss */
+#main .images a {
+  float: left;
+}
+/* line 74, ../sass/_shop.scss */
+#main .images .thumbnails {
+  width: 104px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+/* line 78, ../sass/_shop.scss */
+#main .images .thumbnails a {
+  width: 104px;
+  height: 150px;
+  margin: 0 0 20px 0;
+}
+/* line 82, ../sass/_shop.scss */
+#main .images .thumbnails a img {
+  width: auto;
+  height: 100%;
+}
+/* line 86, ../sass/_shop.scss */
+#main .images .thumbnails a:last-child {
+  margin: 0;
+}
+/* line 94, ../sass/_shop.scss */
+#main .summary {
+  width: 450px;
+  float: left;
+}
+/* line 97, ../sass/_shop.scss */
+#main .summary h1 {
+  margin: 0 0 5px 0;
+}
+/* line 101, ../sass/_shop.scss */
+#main .summary .product_meta .sku {
+  font-style: italic;
+}
+/* line 105, ../sass/_shop.scss */
+#main .summary .price {
+  margin: 30px;
+}
+/* line 107, ../sass/_shop.scss */
+#main .summary .price span {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 114, ../sass/_shop.scss */
+#main .summary .button {
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+}
+/* line 120, ../sass/_shop.scss */
+#main .summary .single_add_to_cart_button {
+  color: white;
+  text-transform: uppercase;
+  background: black;
+}
+/* line 128, ../sass/_shop.scss */
+#main .related {
+  width: 100%;
+  clear: both;
 }
 
 @media all and (max-width: 750px) and (min-width: 320px) {

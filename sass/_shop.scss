@@ -1,14 +1,18 @@
 /* Start Shop Styling */
 #sidebar{
-	width: 20%;
+	width: 160px;
 	float: left;
 	text-align: left;
+	h4{
+		margin: 44px 0 5px 0;
+	}
 	ul{
 		margin: 0;
 		padding: 0;
 		li{
 			list-style: none;
 			a{
+				color: black;
 				&:hover{
 					color: $teal;
 				}
@@ -18,9 +22,13 @@
 }
 
 #main{
-	width: 80%;
+	width: 940px;
 	float: left;
 	text-align: left;
+
+	.tabs{
+		display: none;
+	}
 
 	//Breadcrumbs
 	.woocommerce-breadcrumb{
@@ -35,10 +43,90 @@
 
 	//Product list
 	ul.products{
+		width: 100%;
 		margin: 0;
 		padding: 0;
 		li{
+			width: 220px;
+			float: left;
+			margin: 0 0 30px 20px;
+			text-align: left;
 			list-style: none;
+			p{
+				margin: 0;
+				text-transform: capitalize;
+			}
 		}
+		.first{
+			margin: 0;
+		}
+	}
+
+	//Shop single
+	.images{
+		float: left;
+		a{
+			margin: 0 20px 0 0;
+		}
+		a{
+			float: left;
+		}
+		.thumbnails{
+			width: 104px;
+			float: left;
+			margin: 0 20px 0 0;
+			a{
+				width: 104px;
+				height: 150px;
+				margin: 0 0 20px 0;
+				img{
+					width: auto;
+					height: 100%;
+				}
+				&:last-child{
+					margin: 0;
+				}
+			}
+		}
+	}
+	
+	//Product meta
+	.summary{
+		width: 450px;
+		float: left;
+		h1{
+			margin: 0 0 5px 0;
+		}
+		.product_meta{
+			.sku{
+				font-style: italic;
+			}
+		}
+		.price{
+			margin: 30px;
+			span{
+				font-size: 2.5em;
+				font-style: italic;
+				font-weight: bold;
+			}
+		}
+		
+		.button{
+			padding: 10px 15px;
+			font-weight: bold;
+			border: none;
+		}
+
+		.single_add_to_cart_button{
+			color: white;
+			text-transform: uppercase;
+			background: black;
+		}
+	}
+	
+	//Related products
+	.related{
+		width: 100%;
+		clear: both;
 	}
 }

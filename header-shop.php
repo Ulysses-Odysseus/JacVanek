@@ -58,7 +58,7 @@
     <div class="container">
         <!-- HEADER
         ================================================== -->
-        <header>
+        <header id="home">
             <a href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
