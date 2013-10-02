@@ -59,7 +59,7 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 //Add some things
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 8 );                //SKU & categories ( after title )
 
-//Product description
+//Product description on shop single
 function tf_do_product_desc() {
 	global $woocommerce, $post;
 
@@ -67,8 +67,6 @@ function tf_do_product_desc() {
 		<div itemprop="description">
 
 			<?php $heading = apply_filters('woocommerce_product_description_heading', __('Product Description', 'woocommerce')); ?>
-
-			<!-- <h2><?php echo $heading; ?></h2> -->
 
 			<?php the_content(); ?>
 

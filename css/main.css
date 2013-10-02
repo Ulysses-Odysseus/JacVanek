@@ -859,33 +859,42 @@ footer .right {
   float: right;
   text-align: right;
 }
-/* line 375, ../sass/_app.scss */
+/* line 376, ../sass/_app.scss */
+footer .right input[type="text"],
+footer .right input[type="submit"] {
+  padding: 5px 10px;
+}
+/* line 379, ../sass/_app.scss */
 footer .right input[type="text"] {
   color: #222;
   background: #e1e1e1;
 }
-/* line 379, ../sass/_app.scss */
+/* line 383, ../sass/_app.scss */
 footer .right input[type="submit"] {
   font-weight: bold;
 }
-/* line 383, ../sass/_app.scss */
+/* line 385, ../sass/_app.scss */
+footer .right input[type="submit"]:hover {
+  background: #555;
+}
+/* line 390, ../sass/_app.scss */
 footer .row {
   width: 100%;
   margin: 51px 0 0 0;
   color: #999;
 }
-/* line 387, ../sass/_app.scss */
+/* line 394, ../sass/_app.scss */
 footer .row p {
   margin: 0;
   padding: 0;
 }
-/* line 390, ../sass/_app.scss */
+/* line 397, ../sass/_app.scss */
 footer .row p a {
   color: #448ccb;
   font-style: italic;
 }
 
-/* line 398, ../sass/_app.scss */
+/* line 405, ../sass/_app.scss */
 .slider {
   width: 100%;
   height: 540px;

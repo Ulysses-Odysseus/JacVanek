@@ -37,8 +37,8 @@
             <div class="right">
                 <ul class="left">
                     <li><a href="" target="_top">CUSTOMER CARE</a></li>
-                    <li><a href="<?php echo get_home_url(); ?>/account" target="_top">MY ACCOUNT</a></li>
-                    <li><a class="cart" href="<?php echo get_home_url(); ?>/shop" target="_top">0 ITEMS</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/my-account" target="_top">MY ACCOUNT</a></li>
+                    <li><a class="cart" href="<?php echo get_home_url(); ?>/cart" target="_top">0 ITEMS</a></li>
                 </ul>
                 <div class="search left">
                     <form>

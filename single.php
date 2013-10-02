@@ -17,7 +17,7 @@
         </article>
 
       <?php endwhile; else: ?>
-        <p>Sorry, there are no shows at this time</p>
+        <p>Sorry, we've encountered an error. Web architects en route.</p>
       <?php endif; ?><!-- End the loop -->
 
     </section>
