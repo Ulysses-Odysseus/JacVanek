@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta -->
+    <!-- Meta (Need Favicon)-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
   
-    <title>Blog Jac Vanek</title>
+    <title>Shop Jac Vanek</title>
   
     <!-- Styling -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
