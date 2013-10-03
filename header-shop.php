@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta -->
+    <!-- Meta (Need Favicon)-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
   
-    <title>Blog Jac Vanek</title>
+    <title>Shop Jac Vanek</title>
   
     <!-- Styling -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
@@ -37,8 +37,8 @@
             <div class="right">
                 <ul class="left">
                     <li><a href="" target="_top">CUSTOMER CARE</a></li>
-                    <li><a href="<?php echo get_home_url(); ?>/account" target="_top">MY ACCOUNT</a></li>
-                    <li><a class="cart" href="<?php echo get_home_url(); ?>/shop" target="_top">0 ITEMS</a></li>
+                    <li><a href="<?php echo get_home_url(); ?>/my-account" target="_top">MY ACCOUNT</a></li>
+                    <li><a class="cart" href="<?php echo get_home_url(); ?>/cart" target="_top">0 ITEMS</a></li>
                 </ul>
                 <div class="search left">
                     <form>
