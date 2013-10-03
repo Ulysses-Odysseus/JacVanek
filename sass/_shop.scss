@@ -54,6 +54,10 @@
 			border-top: 0;
 			-webkit-border-radius: 0 !important;
 					border-radius: 0 !important;
+			text-shadow: none;
+			&:before{
+
+			}
 		}
 		h2,h3{
 			font-size: 1.5em;
