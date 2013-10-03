@@ -21,44 +21,63 @@
 	}
 }
 
+
+#cart,
 #main{
-	width: 940px;
-	float: left;
-	text-align: left;
-
-	.tabs{
-		display: none;
-	}
-
-	.button{
-		height: 40px;
-		padding: 0 15px;
-		color: white;
+	//Success messages global
+	.woocommerce-info,
+	.woocommerce-message,
+	.woocommerce-error{
+		color: black;
 		font-weight: bold;
-		line-height: 40px;
-		text-transform: uppercase;
-		border: none;
-		background: black;
-		&:hover{
-			background: $teal;
-		}
-	}
+		margin-top: 10px;
+		background: #e1e1e1 url('../img/message-stripes.png') repeat top left;
+		text-shadow: none;
 
-	.woocommerce{
-		width: 50%;
-		.woocommerce-info,
-		.woocommerce-message,
-		.woocommerce-error{
-			margin-top: 10px;
-			background: #e1e1e1;
-			border-top: 0;
-			-webkit-border-radius: 0 !important;
-					border-radius: 0 !important;
-			text-shadow: none;
-			&:before{
+		//Border radius
+		-webkit-border-radius: 0 !important;
+				border-radius: 0 !important;
 
+		//Box shadow
+	    -webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+				   	box-shadow: none;
+
+		//Sexy lil button
+		.button{
+			height: auto;
+			margin: 0;
+			padding: 0 10px 0 0;
+			color: black;
+			line-height: normal;
+			background: 0;
+			&:hover{
+				padding-right: 5px;
+				color: $teal;
+				background: transparent;
 			}
 		}
+	}
+	
+	//Success messages individual
+	.woocommerce-info,
+	.woocommerce-message{
+		border-top: 1px solid $teal;
+		&:before{
+			background-color: $teal;
+		}
+	}
+
+	.woocommerce-error{
+		border-top: 1px solid #b94e4e;
+		&:before{
+			background-color: #b94e4e;
+		}
+	}
+
+	//Woocommerce content
+	.woocommerce{
+		width: 50%;
 		h2,h3{
 			font-size: 1.5em;
 			text-transform: uppercase;
@@ -79,10 +98,29 @@
 			}
 		}
 
+		.myaccount_user{
+			font-size: 1.25em;
+			margin-bottom: 30px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #e1e1e1;
+			a{
+				color: $teal;
+			}
+		}
+
 		.addresses{
 			.title{
+				padding-top: 0;
 				h3{
 					font-size: 1.3em;
+					background: #e1e1e1;
+					width: 100%;
+					height: 30px;
+					margin-top: 0;
+					line-height: 30px;
+					font-weight: 400;
+					text-align: left;
+					text-indent: 10px;
 				}
 				.edit{
 					color: black;
@@ -142,10 +180,8 @@
 	.images{
 		float: left;
 		a{
-			margin: 0 20px 0 0;
-		}
-		a{
 			float: left;
+			margin: 0 20px 0 0;
 		}
 		.thumbnails{
 			width: 104px;
@@ -221,6 +257,95 @@
 						height: auto;
 					}
 				}
+			}
+		}
+	}
+}
+
+
+//Cart pages respectively
+#cart{
+	width: 100%;
+	text-align: left;
+	.woocommerce{
+		width: 100%;
+		.shop_table{
+			width: 100%;
+			border: 0;
+			thead{
+				background: #e1e1e1 !important;
+			}
+		}
+		.cart-collaterals{
+			.cart_totals{
+				width: auto;
+			}
+			.shipping-calculator-form{
+				width: 300px;
+				float: right;
+			}
+		}
+		.checkout{
+			.col2-set{
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+
+//Main man dude
+#main{
+	width: 940px;
+	float: left;
+	text-align: left;
+
+	.tabs{
+		display: none;
+	}
+
+	.button{
+		height: 40px;
+		padding: 0 15px;
+		color: white;
+		font-weight: bold;
+		line-height: 40px;
+		text-transform: uppercase;
+		border: none;
+		background: black;
+		&:hover{
+			background: $teal;
+		}
+	}
+
+	.woocommerce{
+		.shop_table{
+			width: 100%;
+			border: 0;
+			thead{
+				background: #e1e1e1 !important;
+			}
+		}
+		ul.order_details{
+			padding: 20px;
+			border-top: 1px solid $teal;
+			background: #e1e1e1 url('../img/message-stripes.png') repeat top left;
+		}
+		.order_details{
+			color: #111;
+			text-shadow: 1px 1px 1px #f6f6f6;
+			background: #ededed;
+		}
+		header{
+			padding-top: 30px;
+			text-align: left;
+		}
+		.customer_details{
+			dt{
+				font-weight: bold;
+			}
+			dd{
+				margin: 0 0 20px 0;
 			}
 		}
 	}
