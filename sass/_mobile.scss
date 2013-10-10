@@ -1,7 +1,8 @@
-@media all and (max-width: 750px) and (min-width: 320px) {
+@media all and (min-width: 320px) and (max-width: 750px) {
 	//Basic Global Styles
 	body,
 	html{
+		position: relative;
 		width: 100%;
 		height: 100%;
 		text-align: center;
@@ -10,7 +11,7 @@
 	}
 	
 	.shopBtn{
-		display:block;
+		display: block;
 		width: 100%;
 		height: 40px;
 		margin: 0 0 30px 0;
@@ -34,11 +35,21 @@
 		}
 	}
 
-	#container{
-		padding: 0 20px;
+	.outer-wrap{
+		width: 100%;
+		left: 0;
+		position: absolute;
+		z-index: 2;
+	}
+
+	//Blog Header & Nav
+	.container{
+		width: 90%;
+		padding: 0 5%;
 
 	  	//Header Styles
-		header{
+		#blog{
+			width: 100%;
 			padding: 30px 0 0 0;
 			border-bottom: 1px solid #ccc;
 			.logo{
@@ -50,52 +61,136 @@
 					height: auto;
 				}
 			}
-		}
 
-		//Navigation
-		nav{
-			width: 100%;
-			float: none;
-			position: static;
-			margin: 0;
-			padding: 0 0 10px 0;
-			ul{
-				clear: left;
+			//Navigation
+			nav{
+				width: 100%;
 				float: none;
-			  	list-style: none;
-			  	margin: 0;
-			  	padding: 0;
-			  	position: static;
-			  	left: none;
-			  	text-align: center;
-				li{
-					display: inline;
-				  	float: none;
+				position: static;
+				margin: 0;
+				padding: 0 0 10px 0;
+				ul{
+					width: inherit;
+					clear: left;
+					float: none;
 				  	list-style: none;
 				  	margin: 0;
 				  	padding: 0;
 				  	position: static;
-				  	right: none;
-					a{
-						display: inline-block;
-						float: none;
-						padding: 0;
-						margin: 0 10px 5px 10px;
-						font-size: 1.2em;
-						font-weight: 400;
-						text-align: center;
-						text-transform: uppercase;
-						border-bottom: none;
-						&:hover{
-							color: $teal;
+				  	left: none;
+				  	text-align: center;
+					li{
+						display: inline;
+					  	float: none;
+					  	list-style: none;
+					  	margin: 0;
+					  	padding: 0;
+					  	position: static;
+					  	right: none;
+						a{
+							display: inline-block;
+							float: none;
+							padding: 0;
+							margin: 0 10px 5px 10px;
+							font-size: 1.2em;
+							font-weight: 400;
+							line-height: 24px;
+							text-align: center;
+							text-transform: uppercase;
 							border-bottom: none;
+							&:hover{
+								color: $teal;
+								border-bottom: none;
+							}
+						}
+						&:first-child{
+							a{ padding: 0 0 5px 0; }
+						}
+						&:last-child{
+							a{ padding: 0 0 5px 0; }
 						}
 					}
-					&:first-child{
-						a{ padding: 0 0 5px 0; }
-					}
-					&:last-child{
-						a{ padding: 0 0 5px 0; }
+				}
+			}
+		}
+		
+
+		//Shop Header & nav
+		#home{
+			position: absolute;
+			width: 65%;
+			height: 100%;
+			margin: 0;
+			padding: 10% 10% 0 10%;
+			top: 0;
+			left: -85%;
+			border-bottom: none;
+			background: #f1f1f1;
+
+			//Depth
+			-webkit-box-shadow: inset -4px 0px 10px 0px rgba(0, 0, 0, .4);
+			        box-shadow: inset -4px 0px 10px 0px rgba(0, 0, 0, .4);
+
+			.logo{
+				width: 100%;
+				height: auto;
+				margin: 0 0 20px 0;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			//Navigation
+			nav{
+				width: 80%;
+				float: none;
+				position: static;
+				margin: 0;
+				padding: 0;
+				ul{
+					width: 100%;
+					clear: left;
+					float: none;
+				  	list-style: none;
+				  	margin: 0;
+				  	padding: 0;
+				  	position: static;
+				  	left: none;
+				  	text-align: center;
+					li{
+						position: static;
+						display: list-item;
+						width: 100%;
+						margin: 0;
+					  	padding: 10px 5px;
+					  	float: none;
+					  	right: none;
+					  	list-style: none;
+					  	text-align: left;
+					  	border-bottom: 1px solid #999;
+						a{
+							display: inline-block;
+							float: none;
+							padding: 0;
+							margin: 0;
+							font-size: 1.2em;
+							font-weight: 400;
+							line-height: 24px;
+							text-align: center;
+							text-transform: uppercase;
+							border-bottom: none;
+							&:hover{
+								color: $teal;
+								border-bottom: none;
+							}
+						}
+						&:first-child{
+							a{ padding: 0 0 5px 0; }
+						}
+						&:last-child{
+							a{ padding: 0 0 5px 0; }
+						}
 					}
 				}
 			}
@@ -115,6 +210,24 @@
 				// 	margin: 0 0 10px;
 				// }
 			}
+		}
+
+
+		//Image Slider - Temporary ( revolution is responsive on its own )
+		.slider{
+			height: 200px !important;
+		}
+	}
+
+
+	.wrapper{
+		text-align: left;
+		.container{
+			display: none;
+		}
+
+		#nav-toggle{
+			color: white;
 		}
 	}
 }
