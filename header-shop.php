@@ -27,8 +27,13 @@
 
     <div class="outer-wrap">
 
-    <!-- Sub Header -->
+    <!-- Sub Header 
+    ---------------------->
     <div class="wrapper clearfix">
+
+        <!-- Mobile Nav Toggle -->
+        <button id="nav-toggle" class="nav-closed">Menu</button>
+
         <div class="container">
             <div class="newsletter left">
                 <form>
@@ -45,7 +50,7 @@
                 <div class="search left">
                     <form>
                         <input type="text" placeholder="Search...">
-                        <input type="submit" value="Search">
+                        <input id="search-toggle" class="search-closed" type="submit" value="Search">
                     </form>
                 </div>
                 <ul class="social left">
@@ -56,7 +61,8 @@
             </div>
         </div>
 
-        <a id="nav-toggle" class="nav-closed" href="#">Open</a>
+        <!-- Mobile Search Toggle -->
+        <button id="search-show" class="search-closed">Search</button>
     </div>
 
     <div class="container">

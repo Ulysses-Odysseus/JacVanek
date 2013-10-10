@@ -45,7 +45,7 @@
 	//Blog Header & Nav
 	.container{
 		width: 90%;
-		padding: 0 5%;
+		padding: 0;
 
 	  	//Header Styles
 		#blog{
@@ -134,7 +134,8 @@
 			.logo{
 				width: 100%;
 				height: auto;
-				margin: 0 0 20px 0;
+				margin: 0 0 20px -20%;
+				opacity: 0;
 				img{
 					width: 100%;
 					height: auto;
@@ -143,11 +144,19 @@
 
 			//Navigation
 			nav{
-				width: 80%;
+				width: 85%;
 				float: none;
 				position: static;
-				margin: 0;
+				margin: 0 0 0 20%;
 				padding: 0;
+				opacity: 0;
+				
+				//EaseInOut
+				-webkit-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+				   -moz-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+				    -ms-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+				     -o-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+				        transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 				ul{
 					width: 100%;
 					clear: left;
@@ -223,11 +232,82 @@
 	.wrapper{
 		text-align: left;
 		.container{
-			display: none;
+			.newsletter{
+				display: none;
+			}
+			.right{
+				float: left;
+				width: 65%;
+				.left{
+					width: 100%;
+					li{
+						&:first-child{
+							display:none;
+						}
+					}
+				}
+				.search{
+					position: absolute;
+					top: -40px;
+					left: 0;
+					margin: 0;
+					padding: 0;
+					input[type="text"]{
+						width: 90%;
+						color: #222;
+						padding: 0 5%;
+						line-height: 40px;
+						border-radius: 0;
+						background: #f1f1f1;
+
+						//Depth
+						-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .5);
+						        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .5);
+					}
+					input[type="submit"]{
+						display: none;
+					}
+				}
+
+				.social{
+					display: none;
+				}
+			}
+		}
+
+		#nav-toggle,
+		#search-show{
+			width: 20%;
+			height: 40px;
+			display: block;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			text-indent: -999em;
+			border: none;
+			&:active{
+				opacity: .7;
+				
+				//Depth
+				-webkit-box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+				        box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 1);
+			}
 		}
 
 		#nav-toggle{
-			color: white;
+			float: left;
+			// border-right: 1px solid #444;
+			background: #222 url('../img/icon-menu.svg') no-repeat center;
+			opacity: .5;
+		}
+
+		#search-show{
+			position: absolute;
+			top: 0;
+			right: 0;
+			// border-left: 1px solid #444;
+			background: #222 url('../img/search.svg') no-repeat center;
+			opacity: .5;
 		}
 	}
 }
