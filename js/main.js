@@ -37,7 +37,7 @@
 	});
 
 	$('#search-show').bind( 'click', function () {
-		console.log('boom baby');
+		//console.log('boom baby');
 
 		var toggle = $(this).attr('class');
 

@@ -74,3 +74,23 @@ function tf_do_product_desc() {
 	<?php endif;
 }
 add_action( 'woocommerce_single_product_summary', 'tf_do_product_desc', 15 );
+
+// Template Filter
+add_action('template_include', 'my_template');
+function my_template($template){
+	$new_template = '';
+
+	// single post template
+    if( is_single() ) {
+      global $post;
+
+      // LookBook Single
+      if( has_term('LookBook', 'category', $post) ) {
+        $new_template = locate_template(array('single-lookbook.php' ));
+      }
+
+    }
+    return ('' != $new_template) ? $new_template : $template;
+   
+}
+?>

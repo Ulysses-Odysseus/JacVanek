@@ -10,6 +10,10 @@
           <time datetime="<?php the_date('Y-m-d'); ?>"><?php the_modified_time('F j, Y'); ?></time>
           <h1><?php the_title(); ?></h1>
           <?php the_content(); ?>
+          <?php if(the_excerpt() ) : 
+            the_excerpt();
+            endif;
+          ?>
           <span class="singleLine"></span>
           <div id="comment_section" class="comments">
               <?php comments_template(); ?>
