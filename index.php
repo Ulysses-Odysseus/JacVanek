@@ -11,7 +11,21 @@ get_header('blog'); ?>
             <article>
                 <time datetime="<?php the_date('Y-m-d'); ?>"><?php the_modified_time('F j, Y'); ?></time>
                 <h1><a href="<?php the_permalink(); ?>" target="_top"><?php the_title(); ?></a></h1>
-                <?php the_content(); ?>
+                <!-- Feauture Image -->
+                <?php
+                if(has_post_thumbnail()) :
+                    $thumb_size = 'full'; ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($thumb_size);?></a>
+                    <?php
+                endif;
+                ?>
+                <!-- Content -->
+                <?php 
+                if(the_excerpt() != '') : 
+                    the_excerpt();
+                endif;
+                ?>
+                <!-- Comments -->
                 <div class="count linearTrans">
                     <a href="<?php the_permalink(); ?>#comment_section">
                         <?php 
@@ -22,6 +36,7 @@ get_header('blog'); ?>
                         );?>
                     </a>
                 </div>
+                <!-- End: Comments -->
                 <span class="line"></span>
             </article>
 
