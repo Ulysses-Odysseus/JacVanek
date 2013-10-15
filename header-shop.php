@@ -25,8 +25,15 @@
 </head>
 <body>
 
-    <!-- Sub Header -->
+    <div class="outer-wrap">
+
+    <!-- Sub Header 
+    ---------------------->
     <div class="wrapper clearfix">
+
+        <!-- Mobile Nav Toggle -->
+        <button id="nav-toggle" class="nav-closed">Menu</button>
+
         <div class="container">
             <div class="newsletter left">
                 <form>
@@ -43,7 +50,7 @@
                 <div class="search left">
                     <form>
                         <input type="text" placeholder="Search...">
-                        <input type="submit" value="Search">
+                        <input id="search-toggle" class="search-closed" type="submit" value="Search">
                     </form>
                 </div>
                 <ul class="social left">
@@ -53,13 +60,16 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Mobile Search Toggle -->
+        <button id="search-show" class="search-closed">Search</button>
     </div>
 
     <div class="container">
         <!-- HEADER
         ================================================== -->
         <header id="home">
-            <a href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
+            <a class="logo" href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
             <!-- Menu 

@@ -6,7 +6,8 @@ get_header('shop'); ?>
     
     <!-- Home Slider -->
     <div id="slider" class="slider clearfix">
-      <?php putRevSlider("homeSlider","homepage") ?> 
+      <?php //Must have revolution slider plugin installed
+      putRevSlider("homeSlider","homepage"); ?>
     </div>
 	
 	<!-- Show Content -->
