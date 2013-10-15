@@ -4,13 +4,12 @@ Template Name: Lookbook Single
 */
 get_header('shop'); ?>
 	
-	<section class="lookBook_post">	
 		<?php 
 
 		// Settings 
 		$args = array (
-			'post_type'			=> 'post',
-			'post_status' 		=> 'publish'
+			'post_type'		=> 'post',
+			'post_status' 	=> 'publish'
         );
 
         // Query
@@ -25,13 +24,18 @@ get_header('shop'); ?>
 		        if(in_category('LookBook')) :
 
 		        	// The Content
-	                the_content();
-	                ?>
-	                <h1><?php the_title();?></h1>
-	                <span class="line"></span>
-	                <?php 
-	                if(the_excerpt() != '') : the_excerpt();
-		            endif;
+		        	echo '<article class="slider">';
+							the_content();
+	                echo '</article>';
+	                
+	                // Text and Title
+	                echo '<article class="lookBook_post">'; ?>
+		                <h1><?php the_title();?></h1>
+		                <span class="line"></span>
+		                <?php 
+		                if(the_excerpt() != '') : the_excerpt();
+			            endif;
+		            echo '</article>';
 			        ?>
 	                <?php
 	            endif;
@@ -41,6 +45,5 @@ get_header('shop'); ?>
 	    endif;
         $wp_query = $temp;
 		?>
-	</section>
 
 <?php get_footer('shop'); ?>

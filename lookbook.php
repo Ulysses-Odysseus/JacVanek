@@ -4,7 +4,7 @@ Template Name: Lookbook
 */
 get_header('shop'); ?>
 	
-	<section class="lookBook_post">	
+	<article class="lookBook_post slider">	
 		<?php 
 
 		// Settings 
@@ -39,6 +39,6 @@ get_header('shop'); ?>
 	    <?php endif;
         $wp_query = $temp;
 		?>
-	</section>
+	</article>
 
 <?php get_footer('shop'); ?>
