@@ -20,8 +20,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>!window.jQuery && document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
 
-    <!-- WP -->
+    <!-- WP & WooCommerce-->
     <?php wp_head(); ?>
+    <?php global $woocommerce; ?>
 </head>
 <body>
 
@@ -45,14 +46,9 @@
                 <ul class="left">
                     <li><a href="" target="_top">CUSTOMER CARE</a></li>
                     <li><a href="<?php echo get_home_url(); ?>/my-account" target="_top">MY ACCOUNT</a></li>
-                    <li><a class="cart" href="<?php echo get_home_url(); ?>/cart" target="_top">0 ITEMS</a></li>
+                    <li><a class="cart" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a></li>
                 </ul>
-                <div class="search left">
-                    <form>
-                        <input type="text" placeholder="Search...">
-                        <input id="search-toggle" class="search-closed" type="submit" value="Search">
-                    </form>
-                </div>
+                <?php get_search_form(); ?>
                 <ul class="social left">
                     <li><a class="inst" href="" target="_top"></a>Instagram</li>
                     <li><a class="twit" href="" target="_top"></a>Twitter</li>

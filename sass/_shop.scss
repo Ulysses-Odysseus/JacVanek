@@ -275,6 +275,16 @@
 			thead{
 				background: #e1e1e1 !important;
 			}
+			tbody{
+				.cart_table_item{
+					.product-quantity{
+						.quantity{
+							width: 62px;
+							margin: 0;
+						}
+					}
+				}
+			}
 		}
 		.cart-collaterals{
 			.cart_totals{
