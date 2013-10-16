@@ -9,7 +9,7 @@ get_header('shop'); ?>
 
 		// Settings 
 		$args = array (
-			'post_type'		=> 'page',
+			'post_type'		=> 'post',
 			'post_status' 	=> 'publish'
         );
         // Query
