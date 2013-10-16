@@ -16,7 +16,7 @@ get_header('shop'); ?>
         $temp = $wp_query; // assign ordinal query to temp variable for later use  
         $wp_query = null;
         $wp_query = new WP_Query($args); 
-
+        global $post;
         // Start Loop
         if( $wp_query->have_posts()) : while($wp_query->have_posts()) : $wp_query->the_post();
 
@@ -41,7 +41,7 @@ get_header('shop'); ?>
 	            endif;
 
             endwhile;
-            wp_reset_postdata();
+            wp_reset_query();
 	    endif;
         $wp_query = $temp;
 		?>

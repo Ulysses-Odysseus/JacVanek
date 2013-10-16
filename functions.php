@@ -10,6 +10,19 @@ function JAC_setup(){
 	require_once( get_template_directory() . '/functions/wordpress_resets.php');
 }
 
+//TEMPORARY STUFF IN FUNCTIONS.PHP ONLY
+  //REMOVE ON LIVE SERVER
+  add_action('wp_head', 'check_template');
+  function check_template() {
+    global $template; 
+    $template = explode('/', $template);
+    $array_count = count($template);
+    $array_count = $array_count - 1;
+    $template = $template[$array_count];
+    ?>
+    <div class="notes" style="width:99.3%; background:#eee;padding:5px; z-index:100; font:12px/15px 'courier new';text-align:left;">Template: <?php  print_r($template); ?></div>  
+  <?php }
+  //REMOVE ON LIVE SERVER
 
 //Add featured image to posts
 if ( function_exists( 'add_theme_support' ) ) {
@@ -75,12 +88,15 @@ function tf_do_product_desc() {
 }
 add_action( 'woocommerce_single_product_summary', 'tf_do_product_desc', 15 );
 
-// Template Filter
-add_action('template_include', 'my_template');
-function my_template($template){
+/*==========================*/
+/***    Template Filter   ***/
+/*==========================*/
+
+add_action('template_include', 'lookBook_single_template');
+function lookBook_single_template($template){
 	$new_template = '';
 
-	// single post template
+	// Single post template
     if( is_single() ) {
       global $post;
 

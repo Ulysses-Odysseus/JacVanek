@@ -4,12 +4,12 @@ Template Name: Lookbook
 */
 get_header('shop'); ?>
 	
-	<article class="lookBook_post slider">	
+	<article class="lookBook_post">	
 		<?php 
 
 		// Settings 
 		$args = array (
-			'post_type'		=> 'post',
+			'post_type'		=> 'page',
 			'post_status' 	=> 'publish'
         );
         // Query
