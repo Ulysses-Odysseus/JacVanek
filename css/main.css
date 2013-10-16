@@ -246,7 +246,7 @@ figure {
  */
 /* line 243, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -458,7 +458,7 @@ html {
   width: 100%;
   height: 100%;
   text-align: center;
-  font: normal 13px/18px "Source Sans Pro", sans-serif;
+  font: normal 13px/18px 'Source Sans Pro', sans-serif;
   background: white;
 }
 
@@ -515,7 +515,7 @@ a,
 .shopBtn p a {
   color: inherit;
   margin: 0 0 0 5px;
-  border-bottom: 1px dashed #cccccc;
+  border-bottom: 1px dashed #ccc;
 }
 /* line 82, ../sass/_app.scss */
 .shopBtn p:hover {
@@ -557,7 +557,7 @@ a,
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 
 /* line 127, ../sass/_app.scss */
@@ -588,7 +588,7 @@ a,
   margin: 10px 0 10px 10px;
   padding: 0 10px;
   line-height: 20px;
-  border-right: 1px solid #666666;
+  border-right: 1px solid #666;
 }
 /* line 152, ../sass/_app.scss */
 .wrapper .right ul li a {
@@ -709,7 +709,7 @@ a,
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 /* line 250, ../sass/_app.scss */
 .container header nav ul li a:hover {
@@ -945,7 +945,7 @@ footer .row p a {
 /* line 473, ../sass/_app.scss */
 .slider {
   width: 100%;
-  height: 540px;
+  height: auto;
   margin: 10px 0 20px 0;
   padding: 0;
   background: #ccc;
@@ -1064,12 +1064,12 @@ footer .row p a {
 #main .woocommerce form .input-text {
   padding: 5px 10px;
   border: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 /* line 90, ../sass/_shop.scss */
 #cart .woocommerce form .input-text:focus,
 #main .woocommerce form .input-text:focus {
-  border: 1px solid #999999;
+  border: 1px solid #999;
 }
 /* line 94, ../sass/_shop.scss */
 #cart .woocommerce form .button,
@@ -1370,7 +1370,7 @@ footer .row p a {
     width: 100%;
     height: 100%;
     text-align: center;
-    font: normal 14px/18px "Source Sans Pro", sans-serif;
+    font: normal 14px/18px 'Source Sans Pro', sans-serif;
     background: white;
   }
 
@@ -1420,7 +1420,7 @@ footer .row p a {
   .container #blog {
     width: 100%;
     padding: 30px 0 0 0;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
   }
   /* line 55, ../sass/_mobile.scss */
   .container #blog .logo {
@@ -1552,7 +1552,7 @@ footer .row p a {
     right: none;
     list-style: none;
     text-align: left;
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #999;
   }
   /* line 181, ../sass/_mobile.scss */
   .container #home nav ul li a {
