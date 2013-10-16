@@ -81,6 +81,7 @@
                     // $excl = '6,13,14,22,7,11,9,12,8,10,18'; //For the live site
                     $args = array(
                         'title_li' => __(''), //Remove default title
+                        'depth'    => 1,      //No sub-pages
                         'exclude'  => $excl
                     );
                     wp_list_pages($args);
