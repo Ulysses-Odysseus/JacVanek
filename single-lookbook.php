@@ -12,13 +12,13 @@ get_header('shop'); ?>
         // LookBooks
         if(in_category('LookBook')) :
 
-        	// The Content
+        	// The Slider
         	echo '<article class="slider">';
 					the_content();
             echo '</article>';
             
             // Text and Title
-            echo '<article class="lookBook_post">'; ?>
+            echo '<article class="lookBook_meta">'; ?>
                 <h1><?php the_title();?></h1>
                 <span class="line"></span>
                 <?php 

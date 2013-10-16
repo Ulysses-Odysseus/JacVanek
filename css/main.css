@@ -945,10 +945,15 @@ footer .row p a {
 /* line 473, ../sass/_app.scss */
 .slider {
   width: 100%;
-  height: auto;
   margin: 10px 0 20px 0;
   padding: 0;
   background: #ccc;
+}
+
+/* line 480, ../sass/_app.scss */
+.lookBook_meta {
+  width: 660px;
+  margin: 40px auto;
 }
 
 /* Start Shop Styling */
