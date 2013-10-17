@@ -10,20 +10,6 @@ function JAC_setup(){
 	require_once( get_template_directory() . '/functions/wordpress_resets.php');
 }
 
-//TEMPORARY STUFF IN FUNCTIONS.PHP ONLY
-  //REMOVE ON LIVE SERVER
-  add_action('wp_head', 'check_template');
-  function check_template() {
-    global $template; 
-    $template = explode('/', $template);
-    $array_count = count($template);
-    $array_count = $array_count - 1;
-    $template = $template[$array_count];
-    ?>
-    <div class="notes" style="width:99.3%; background:#eee;padding:5px; z-index:100; font:12px/15px 'courier new';text-align:left;">Template: <?php  print_r($template); ?></div>  
-  <?php }
-  //REMOVE ON LIVE SERVER
-
 //Add featured image to posts
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
@@ -115,4 +101,16 @@ function lookBook_single_template($template){
     return ('' != $new_template) ? $new_template : $template;
    
 }
-?>
+
+// LOAD PRETTY PHOTO for the whole site
+add_action( 'wp_enqueue_scripts', 'frontend_scripts_include_lightbox' );
+function frontend_scripts_include_lightbox() {
+  global $woocommerce;
+  $suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+  $lightbox_en = get_option( 'woocommerce_enable_lightbox' ) == 'yes' ? true : false;
+  if ( $lightbox_en ) {
+    wp_enqueue_script( 'prettyPhoto', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
+    wp_enqueue_script( 'prettyPhoto-init', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
+    wp_enqueue_style( 'woocommerce_prettyPhoto_css', $woocommerce->plugin_url() . '/assets/css/prettyPhoto.css' );
+  }
+}
