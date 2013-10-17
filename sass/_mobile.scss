@@ -237,12 +237,29 @@
 			}
 			.right{
 				float: left;
-				width: 65%;
+				width: 67%;
 				.left{
 					width: 100%;
 					li{
+						width: 68px;
+						margin: 10px 0 0 0;
+						padding: 0 10px;
+						line-height: 20px;
 						&:first-child{
 							display:none;
+							border-right: 1px solid #666666;
+						}
+						.amount{
+							display: none;
+						}
+						.cart{
+							display: block;
+							width: 43px;
+							height: 20px;
+							margin: 0;
+							padding: 0;
+							background: none;
+							overflow: hidden;
 						}
 					}
 				}
@@ -308,6 +325,108 @@
 			// border-left: 1px solid #444;
 			background: #222 url('../img/search.svg') no-repeat center;
 			opacity: .5;
+		}
+	}
+
+
+	/* Shop Styles */
+	#cart,
+	#main{
+		.woocommerce-info,
+		.woocommerce-message,
+		.woocommerce-error{
+			.button{
+				width: 100%;
+				padding: 0 0 10px 0;
+			}
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		width: 100%;
+		padding: 0;
+		ul.products{
+			li{
+				width: 100%;
+				max-width:320px;
+				margin: 0 0 30px 0;
+			}
+			.first{
+				margin: 0 0 30px 0;
+			}
+		}
+
+		//Shop Single
+		.images{
+			width: 100%;
+			max-width: 320px;
+			.thumbnails{
+				width: 100%;
+				margin: 1.4% 0 0 0;
+				a{
+					width: 32.4%;
+					margin: 0 1.4% 0 0;
+					img{
+						width: 100% !important;
+						height: auto !important;
+					}
+				}
+			}
+			a{
+				margin: 0;
+			}
+		}
+
+		.summary{
+			width: 100%;
+			h1{
+				line-height: 30px;
+			}
+		}
+
+		.related{
+			ul.products{
+				margin: 0;
+				li{
+					width: 49%;
+					margin: 0 1% 2% 0;
+					&:nth-child(2n+2){
+						margin: 0 0 2% 1%;
+					}
+					a{
+						margin: 0;
+						width: 100%;
+
+					}
+				}
+			}
+		}
+
+		.woocommerce{
+			width: 100%;
+			.shop_table,
+			.cart{
+				width: 100%;
+			}
+		}
+	}
+
+	#sidebar{
+		width: 100%;
+		.desktop{
+			display: none;
+		}
+		.mobile{
+			display: block;
+			width: inherit;
+			margin-bottom: 15px;
+			border-radius: 0;
+			border: none;
+		}
+		h4{
+			margin: 0 0 5px 0;
+			font-size: 1.15em;
 		}
 	}
 }

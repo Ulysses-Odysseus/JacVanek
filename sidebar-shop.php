@@ -1,11 +1,11 @@
 <!-- Shop Sidebar -->
 <aside id="sidebar">
 	<h4>SHOP BY:</h4>
-	<ul class="linearTrans">
+	<ul class="desktop linearTrans">
         <?php //List categories
         $args = array(
             'taxonomy' => 'product_cat',
-            'child_of' => 16,            // Use ID of "Clothes"
+            'child_of' => 16,            // Use ID of "Clothes" - Live is 13
             'hide_empty' => false        // For dev purposes
         );
 
@@ -16,4 +16,12 @@
         }
         ?>
     </ul>
+
+    <select class="mobile">
+        <?php //List categories
+        foreach ($categories as $cat) {
+            echo '<option id="' . get_term_link( $cat ) . '">' . $cat->name . '</option>';
+        }
+        ?>
+    </select>
 </aside>

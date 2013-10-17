@@ -3,6 +3,12 @@
 	width: 160px;
 	float: left;
 	text-align: left;
+	.desktop{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
 	h4{
 		margin: 44px 0 5px 0;
 	}
@@ -272,16 +278,39 @@
 		.shop_table{
 			width: 100%;
 			border: 0;
-			thead{
+			header{
 				background: #e1e1e1 !important;
+				width: 100%;
+				padding: 0;
+				.product-remove{}
+				.product-divumbnail,
+				.product-name,
+				.product-price,
+				.product-quantity,
+				.product-subtotal{
+					float: left;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					display: inline-block;
+				}
+				.product-remove{ width: 10%; }
+				.product-divumbnail { width: 20%; }
+				.product-name { width: 20%; }
+				.product-price { width: 10%; }
+				.product-quantity { width: 20%; }
+				.product-subtotal{ width: 10%; }
 			}
-			tbody{
-				.cart_table_item{
-					.product-quantity{
-						.quantity{
-							width: 62px;
-							margin: 0;
-						}
+			
+			.cart_table_item{
+				width: 100%;
+				.product-remove{
+
+				}
+				.product-quantity{
+					.quantity{
+						width: 62px;
+						margin: 0;
 					}
 				}
 			}
