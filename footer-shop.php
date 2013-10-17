@@ -25,10 +25,10 @@
     			<div class="block">
     				<h4>Follow us</h4>
     				<ul>
-                        <li><a href="" target="_top" title="Twitter">Twitter</a></li>
-                        <li><a href="" target="_top" title="Facebook">Facebook</a></li>
-                        <li><a href="" target="_top" title="Pinterest">Pinterest</a></li>
-                        <li><a href="" target="_top" title="Instagram">Instagram</a></li>
+                        <li><a href="http://www.pinterest.com/jacvanek/" target="_blank" title="Pinterest">Pinterest</a></li>
+                        <li><a class="inst" href="http://instagram.com/jacvanek" target="_blank" title="Instagram" >Instagram</a></li>
+                        <li><a class="twit" href="https://twitter.com/jacvanek" target="_blank" title="Twitter" >Twitter</a></li>
+                        <li><a class="face" href="https://www.facebook.com/OfficialJacVanek" target="_blank" title="Facebook">Facebook</a></li>
                     </ul>
     			</div>
     		</div>

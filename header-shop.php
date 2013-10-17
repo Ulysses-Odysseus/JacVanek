@@ -50,9 +50,9 @@
                 </ul>
                 <?php get_search_form(); ?>
                 <ul class="social left">
-                    <li><a class="inst" href="" target="_top"></a>Instagram</li>
-                    <li><a class="twit" href="" target="_top"></a>Twitter</li>
-                    <li><a class="face" href="" target="_top"></a>Facebook</li>
+                    <li><a class="inst" href="http://instagram.com/jacvanek" target="_blank"></a>Instagram</li>
+                    <li><a class="twit" href="https://twitter.com/jacvanek" target="_blank"></a>Twitter</li>
+                    <li><a class="face" href="https://www.facebook.com/OfficialJacVanek" target="_blank"></a>Facebook</li>
                 </ul>
             </div>
         </div>
