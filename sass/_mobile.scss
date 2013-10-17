@@ -231,6 +231,7 @@
 
 	.wrapper{
 		text-align: left;
+		height: 50px;
 		.container{
 			.newsletter{
 				display: none;
@@ -241,25 +242,16 @@
 				.left{
 					width: 100%;
 					li{
-						width: 68px;
-						margin: 10px 0 0 0;
-						padding: 0 10px;
-						line-height: 20px;
-						&:first-child{
-							display:none;
-							border-right: 1px solid #666666;
-						}
-						.amount{
-							display: none;
+						display: none;
+						margin: 0;
+						padding: 0 0 0 20px;
+						line-height: 50px;
+						&:last-child{
+							display: block;
 						}
 						.cart{
 							display: block;
-							width: 43px;
-							height: 20px;
 							margin: 0;
-							padding: 0;
-							background: none;
-							overflow: hidden;
 						}
 					}
 				}
@@ -295,7 +287,7 @@
 		#nav-toggle,
 		#search-show{
 			width: 20%;
-			height: 40px;
+			height: 50px;
 			display: block;
 			margin: 0;
 			padding: 0;
@@ -342,6 +334,7 @@
 		}
 		img{
 			width: 100%;
+			max-width: 320px;
 			height: auto;
 		}
 		width: 100%;
@@ -409,13 +402,6 @@
 			.cart{
 				width: 100%;
 				border: 0;
-				// header{
-				// 	border-top: 1px solid $teal;
-				// 	background: url('../img/message-stripes.png') repeat top left;
-				// 	.product-divumbnail{
-				// 		width: 10%;
-				// 	}
-				// }
 				.cart_table_item{
 					width: 100%;
 					margin-top: 10px;
@@ -470,7 +456,7 @@
 						}
 					}
 					.product-name{
-						margin-bottom: 20px;
+						margin-bottom: 10px;
 						padding-bottom: 5px;
 						border-bottom: 1px solid #ccc;
 						a{
@@ -481,6 +467,7 @@
 					.product-price{
 						width: 50%;
 						text-align: center;
+						margin-bottom: 10px;
 						height: 60px;
 						line-height: 60px;
 						border-right: 1px solid #ccc;
@@ -514,6 +501,77 @@
 							font-size: 2em;
 							padding-left: 20px;
 						}
+					}
+					.product-thumbnail{
+						margin-bottom: 0;
+					}
+				}
+				.actions{
+					width: 100%;
+					.coupon{
+						width: 100%;
+						label{
+							display: block;
+							width: 25%;
+							height: 30px;
+							float: left;
+							margin: 0;
+							padding: 2.5%;
+							text-align: center;
+							font-weight: bold;
+							text-transform: uppercase;
+							line-height: 30px;
+							background: #e1e1e1;
+						}
+						.input-text{
+							display: block;
+							width: 63.2855%;
+							height: 28px;
+							float: left;
+							margin-left: 1%;
+							padding: 2.5%;
+						}
+						.button{
+							width: 100%;
+						}
+					}
+					.options{
+						width: 100%;
+					}
+				}
+				input.button{
+					width: 100%;
+					height: 40px;
+					margin: 1% 0 0 0;
+					border: none !important;
+					background: black;
+
+					//Remove woocommerce defaulta
+					-webkit-box-shadow: none !important;
+					   -moz-box-shadow: none !important;
+							box-shadow: none !important;
+
+					-webkit-border-radius: none !important;
+					   -moz-border-radius: none !important;
+							border-radius: none !important;
+				}
+				input.checkout-button{
+					color: white;
+					background: $teal;
+				}
+			}
+
+			.cart-collaterals{
+				width: 100%;
+				font-size: 1.25em;
+				.shipping_calculator{
+					width: inherit;
+					h2{
+						margin-bottom: 0;
+					}
+					.shipping-calculator-form{
+						width: inherit;
+						padding-top: 20px;
 					}
 				}
 			}
@@ -558,6 +616,39 @@
 		h4{
 			margin: 0 0 5px 0;
 			font-size: 1.15em;
+		}
+	}
+
+	footer{
+		width: 100%;
+		text-align: center;
+		.row{
+			margin: 20px 0;
+		}
+		.left{
+			width: 100%;
+			.block{
+				width: 100%;
+				margin: 0 0 30px 0;
+				line-height: 18px;
+			}
+		}
+		.right{
+			float: none;
+			margin: 20px 0 0 0;
+			text-align: center;
+			form{
+				width: 255px;
+				height: 30px;
+				display: block;
+				margin: 0 auto;
+				input[type="text"]{
+					width: 167px;
+				}
+				input[type="submit"]{
+					width: 68px;
+				}
+			}
 		}
 	}
 }
