@@ -21,14 +21,14 @@ $woocommerce->show_messages();
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
 
 <div class="shop_table cart">
-	<header class="clearfix">
-		<div class="product-remove">&nbsp;</div>
-		<div class="product-divumbnail">&nbsp;</div>
-		<div class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></div>
-		<div class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></div>
-		<div class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></div>
-		<div class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></div>
-	</header>
+<!-- 	<header class="clearfix">
+		<div class="title-remove">&nbsp;</div>
+		<div class="title-divumbnail">&nbsp;</div>
+		<div class="title-name"><?php _e( 'title', 'woocommerce' ); ?></div>
+		<div class="title-price"><?php _e( 'Price', 'woocommerce' ); ?></div>
+		<div class="title-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></div>
+		<div class="title-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></div>
+	</header> -->
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
 		<?php
@@ -37,9 +37,10 @@ $woocommerce->show_messages();
 				$_product = $values['data'];
 				if ( $_product->exists() && $values['quantity'] > 0 ) {
 					?>
-					<section class = "<?php echo esc_attr( apply_filters('woocommerce_cart_table_item_class', 'cart_table_item', $values, $cart_item_key ) ); ?>">
+					<section class = "<?php echo esc_attr( apply_filters('woocommerce_cart_table_item_class', 'cart_table_item', $values, $cart_item_key ) ); ?> clearfix">
 						<!-- Remove from cart link -->
 						<div class="product-remove">
+							<div class="title">&nbsp;</div>
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s">&times;</a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __( 'Remove this item', 'woocommerce' ) ), $cart_item_key );
 							?>
@@ -47,6 +48,7 @@ $woocommerce->show_messages();
 
 						<!-- The thumbnail -->
 						<div class="product-thumbnail">
+							<div class="title">&nbsp;</div>
 							<?php
 								$thumbnail = apply_filters( 'woocommerce_in_cart_product_thumbnail', $_product->get_image(), $values, $cart_item_key );
 
@@ -59,6 +61,7 @@ $woocommerce->show_messages();
 
 						<!-- Product Name -->
 						<div class="product-name">
+							<div class="title"><?php _e( 'title', 'woocommerce' ); ?></div>
 							<?php
 								if ( ! $_product->is_visible() || ( ! empty( $_product->variation_id ) && ! $_product->parent_is_visible() ) )
 									echo apply_filters( 'woocommerce_in_cart_product_title', $_product->get_title(), $values, $cart_item_key );
@@ -76,6 +79,7 @@ $woocommerce->show_messages();
 
 						<!-- Product price -->
 						<div class="product-price">
+							<div class="title"><?php _e( 'Price', 'woocommerce' ); ?></div>
 							<?php
 								$product_price = get_option('woocommerce_tax_display_cart') == 'excl' ? $_product->get_price_excluding_tax() : $_product->get_price_including_tax();
 
@@ -85,6 +89,7 @@ $woocommerce->show_messages();
 
 						<!-- Quantity inputs -->
 						<div class="product-quantity">
+							<div class="title"><?php _e( 'Quantity', 'woocommerce' ); ?></div>
 							<?php
 								if ( $_product->is_sold_individually() ) {
 									$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -103,6 +108,7 @@ $woocommerce->show_messages();
 
 						<!-- Product subtotal -->
 						<div class="product-subtotal">
+							<div class="title"><?php _e( 'Total', 'woocommerce' ); ?></div>
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_subtotal', $woocommerce->cart->get_product_subtotal( $_product, $values['quantity'] ), $values, $cart_item_key );
 							?>
@@ -115,18 +121,19 @@ $woocommerce->show_messages();
 
 		do_action( 'woocommerce_cart_contents' );
 		?>
-		<section>
-			<div colspan="6" class="actions">
+		<div class="actions clearfix">
 
-				<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
-					<div class="coupon">
+			<?php if ( $woocommerce->cart->coupons_enabled() ) { ?>
+				<div class="coupon">
 
-						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
+					<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input name="coupon_code" class="input-text" id="coupon_code" value="" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
 
-						<?php do_action('woocommerce_cart_coupon'); ?>
+					<?php do_action('woocommerce_cart_coupon'); ?>
 
-					</div>
-				<?php } ?>
+				</div>
+			<?php } ?>
+
+			<div class="options">
 
 				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout &rarr;', 'woocommerce' ); ?>" />
 
@@ -134,7 +141,7 @@ $woocommerce->show_messages();
 
 				<?php $woocommerce->nonce_field('cart') ?>
 			</div>
-		</section>
+		</div>
 
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 </div>

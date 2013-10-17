@@ -278,12 +278,21 @@
 		.shop_table{
 			width: 100%;
 			border: 0;
-			header{
-				background: #e1e1e1 !important;
+			// header{
+			// 	border-top: 1px solid $teal;
+			// 	background: url('../img/message-stripes.png') repeat top left;
+			// 	.product-divumbnail{
+			// 		width: 10%;
+			// 	}
+			// }
+			.cart_table_item{
 				width: 100%;
+				margin-top: 10px;
 				padding: 0;
-				.product-remove{}
-				.product-divumbnail,
+				font-weight: bold;
+				text-transform: uppercase;
+				.product-remove,
+				.product-thumbnail,
 				.product-name,
 				.product-price,
 				.product-quantity,
@@ -292,27 +301,39 @@
 					margin: 0;
 					padding: 0;
 					text-align: center;
-					display: inline-block;
+					display: table-column;
+					vertical-align: middle;
 				}
-				.product-remove{ width: 10%; }
-				.product-divumbnail { width: 20%; }
-				.product-name { width: 20%; }
-				.product-price { width: 10%; }
+				.product-remove   { width: 5%;  }
+				.product-name     { width: 35%; }
+				.product-price    { width: 15%; }
 				.product-quantity { width: 20%; }
-				.product-subtotal{ width: 10%; }
-			}
-			
-			.cart_table_item{
-				width: 100%;
-				.product-remove{
-
+				.product-subtotal { width: 15%; }
+				.title{
+					width: 100%;
+					padding: 5px 0;
+					margin: 0 0 20px 0;
+					border-top: 1px solid $teal;
+					// border-top: none;
+					background: url('../img/message-stripes.png') repeat top left;
+					// background: #f1f1f1;
 				}
-				.product-quantity{
-					.quantity{
-						width: 62px;
-						margin: 0;
+				.product-remove{
+					a{
+						color: #ff0000;
+						font-weight: bold;
+						font-size: 1.25em;
 					}
 				}
+			}
+		}
+		.actions{
+			width: 100%;
+			.coupon{
+				float: left;
+			}
+			.options{
+				float: right;
 			}
 		}
 		.cart-collaterals{

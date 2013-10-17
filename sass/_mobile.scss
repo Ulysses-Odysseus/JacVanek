@@ -408,9 +408,140 @@
 			.shop_table,
 			.cart{
 				width: 100%;
+				border: 0;
+				// header{
+				// 	border-top: 1px solid $teal;
+				// 	background: url('../img/message-stripes.png') repeat top left;
+				// 	.product-divumbnail{
+				// 		width: 10%;
+				// 	}
+				// }
+				.cart_table_item{
+					width: 100%;
+					margin-top: 10px;
+					padding: 0;
+					font-weight: bold;
+					text-transform: uppercase;
+					.product-remove,
+					.product-thumbnail,
+					.product-name,
+					.product-price,
+					.product-quantity,
+					.product-subtotal{
+						width: 100%;
+						float: left;
+						margin: 0 0 20px 0;
+						padding: 0;
+						text-align: left;
+						display: table-column;
+						vertical-align: middle;
+					}
+					.title{
+						width: 100%;
+						padding: 5px 0;
+						margin: 0 0 10px 0;
+						border:none;
+						background: none;
+					}
+					.product-remove,
+					.product-thumbnail,
+					.product-name,
+					.product-price{
+						.title{
+							display: none;
+						}
+					}
+					.product-remove{
+						width: 40px;
+						background: $teal;
+						margin-bottom: 5px;
+						a{
+							display: block;
+							width: 40px;
+							height: 39px;
+							text-align: center;
+							line-height: 39px;
+							color: white;
+							font-weight: bold;
+							font-size: 2em;
+						}
+						.title{
+							display: none;
+						}
+					}
+					.product-name{
+						margin-bottom: 20px;
+						padding-bottom: 5px;
+						border-bottom: 1px solid #ccc;
+						a{
+							font-size: 2em;
+							line-height: 30px;
+						}
+					}
+					.product-price{
+						width: 50%;
+						text-align: center;
+						height: 60px;
+						line-height: 60px;
+						border-right: 1px solid #ccc;
+						.amount{
+							font-size: 2em;
+							font-style: italic;
+							font-weight: 100;
+						}
+					}
+					.product-quantity{
+						width: 49%;
+						height: 60px;
+						margin: 0 auto;
+						.title{
+							display: none;
+						}
+					}
+					.product-subtotal{
+						padding: 0 0 20px 0;
+						background: #f1f1f1;
+						.title{
+							width: 95%;
+							padding: 2.5%;
+							margin-bottom: 20px;
+							color: black;
+							font-size: 1.15em;
+							border-top: 1px solid $teal;
+							background: url('../img/message-stripes.png') repeat top left;
+						}
+						.amount{
+							font-size: 2em;
+							padding-left: 20px;
+						}
+					}
+				}
+			}
+			.quantity{
+				width: 60px;
+				height: 60px;
+				margin: 0 auto;
+				position: static;
+				input[type="number"]{
+					width: 60px;
+					height: 60px;
+					line-height: 60px;
+					text-align: center;
+					border: none;
+					padding: 0;
+					font-size: 2em;
+					font-weight: 100;
+					background: $teal;
+					color: white;
+					border-radius: 60px;
+					
+					-webkit-box-shadow: none;
+					   -moz-box-shadow: none;
+						    box-shadow: none;
+				}
 			}
 		}
-	}
+	}	
 
 	#sidebar{
 		width: 100%;
