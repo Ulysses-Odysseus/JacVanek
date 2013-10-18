@@ -136,6 +136,23 @@
 				}
 			}
 		}
+		form.login{
+			width: 100%;
+			margin: 0 0 20px 0;
+			padding: 0;
+			border: none;
+			.form-row{
+				width: 100%;
+				margin: 0;
+				float: none;
+				p{
+					margin: 0;
+				}
+			}
+			.input-text{
+				width: 100%;
+			}
+		}
 	}
 
 	//Breadcrumbs
@@ -264,6 +281,21 @@
 						height: auto;
 					}
 				}
+			}
+		}
+	}
+
+	#payment{
+		#place_order{
+			background: black;
+			height: 40px;
+			line-height: 20px;
+			border: none;
+			box-shadow: none;
+			color: #ccc;
+			&:hover{
+				color: white;
+				background: $teal;
 			}
 		}
 	}
