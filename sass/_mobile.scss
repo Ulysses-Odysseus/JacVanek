@@ -560,6 +560,30 @@
 				}
 			}
 
+			.checkout{
+				img{
+					width: auto;
+					height: auto;
+				}
+				.col2-set{
+					font-size: 1.15em;
+					.col-1,
+					.col-2{
+						width: 100%;
+					}
+				}
+				#shiptobilling{
+					float: left;
+					margin: 30px 0 0 0;
+					label{
+						font-size: 1.15em;
+					}
+				}
+				#order_review{
+					font-size: 1.15em;
+				}
+			}
+
 			.cart-collaterals{
 				width: 100%;
 				font-size: 1.25em;
