@@ -42,7 +42,7 @@ get_header('shop'); ?>
 
 				<div>
 					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'jacvanek' ); ?></p>
-					<div id="newSearc">
+					<div id="newSearch">
 						<?php get_search_form(); ?>
 					</div>
  				</div>
