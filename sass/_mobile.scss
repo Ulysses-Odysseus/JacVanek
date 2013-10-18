@@ -458,10 +458,15 @@
 					.product-name{
 						margin-bottom: 10px;
 						padding-bottom: 5px;
+						text-align: left;
 						border-bottom: 1px solid #ccc;
 						a{
+							padding-left: 0;
 							font-size: 2em;
 							line-height: 30px;
+						}
+						.variation{
+							margin: 0;
 						}
 					}
 					.product-price{
@@ -479,7 +484,8 @@
 					.product-quantity{
 						width: 49%;
 						height: 60px;
-						margin: 0 auto;
+						margin: 0;
+						text-align: center;
 						.title{
 							display: none;
 						}
@@ -590,7 +596,7 @@
 				.shipping_calculator{
 					width: inherit;
 					h2{
-						margin-bottom: 0;
+						margin-bottom: 30px;
 					}
 					.shipping-calculator-form{
 						width: inherit;
@@ -609,7 +615,7 @@
 					line-height: 60px;
 					text-align: center;
 					border: none;
-					padding: 0;
+					padding: 0 !important;
 					font-size: 2em;
 					font-weight: 100;
 					background: $teal;
@@ -619,6 +625,10 @@
 					-webkit-box-shadow: none;
 					   -moz-box-shadow: none;
 						    box-shadow: none;
+				}
+				.plus,
+				.minus{
+					display: none;
 				}
 			}
 		}
