@@ -250,8 +250,8 @@
 							display: block;
 						}
 						.cart{
-							display: block;
 							margin: 0;
+							text-transform: uppercase;
 						}
 					}
 				}
@@ -473,7 +473,6 @@
 						border-right: 1px solid #ccc;
 						.amount{
 							font-size: 2em;
-							font-style: italic;
 							font-weight: 100;
 						}
 					}
