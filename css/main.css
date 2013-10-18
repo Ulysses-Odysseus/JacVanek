@@ -587,30 +587,38 @@ a,
 .wrapper .right ul li {
   float: left;
   margin: 10px 0 10px 10px;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   line-height: 20px;
+  text-transform: uppercase;
   border-right: 1px solid #666666;
 }
-/* line 153, ../sass/_app.scss */
+/* line 154, ../sass/_app.scss */
 .wrapper .right ul li a {
   color: #ccc;
+  margin: 0;
+  padding: 0;
   font-size: .85em;
 }
-/* line 156, ../sass/_app.scss */
+/* line 159, ../sass/_app.scss */
 .wrapper .right ul li a:hover {
   color: white;
 }
-/* line 160, ../sass/_app.scss */
+/* line 163, ../sass/_app.scss */
 .wrapper .right ul li:last-child {
   border: none;
 }
-/* line 167, ../sass/_app.scss */
+/* line 166, ../sass/_app.scss */
+.wrapper .right ul li .cart {
+  padding-left: 20px;
+  background: url("../img/icon-cart.svg") no-repeat center left;
+}
+/* line 174, ../sass/_app.scss */
 .wrapper .right .social {
   height: 40px;
   margin: 0 0 0 10px;
   padding: 0;
 }
-/* line 171, ../sass/_app.scss */
+/* line 178, ../sass/_app.scss */
 .wrapper .right .social li {
   width: 20px;
   height: 20px;
@@ -618,7 +626,7 @@ a,
   overflow: hidden;
   border: none !important;
 }
-/* line 177, ../sass/_app.scss */
+/* line 184, ../sass/_app.scss */
 .wrapper .right .social li a {
   display: block;
   width: 20px;
@@ -627,33 +635,33 @@ a,
   text-indent: -999em;
   opacity: .3;
 }
-/* line 184, ../sass/_app.scss */
+/* line 191, ../sass/_app.scss */
 .wrapper .right .social li a:hover {
   opacity: .6;
 }
-/* line 188, ../sass/_app.scss */
+/* line 195, ../sass/_app.scss */
 .wrapper .right .social li .inst {
   background: url("../img/icon-instagram.svg") no-repeat center;
 }
-/* line 189, ../sass/_app.scss */
+/* line 196, ../sass/_app.scss */
 .wrapper .right .social li .twit {
   background: url("../img/icon-twitter.svg") no-repeat center;
 }
-/* line 190, ../sass/_app.scss */
+/* line 197, ../sass/_app.scss */
 .wrapper .right .social li .face {
   background: url("../img/icon-facebook.svg") no-repeat center;
 }
-/* line 195, ../sass/_app.scss */
+/* line 202, ../sass/_app.scss */
 .wrapper .right .search {
   border: none;
   margin: 0 0 0 10px;
   background: #222;
 }
-/* line 199, ../sass/_app.scss */
+/* line 206, ../sass/_app.scss */
 .wrapper .right .search input[type="text"] {
   border-right: none;
 }
-/* line 202, ../sass/_app.scss */
+/* line 209, ../sass/_app.scss */
 .wrapper .right .search input[type="submit"] {
   display: block;
   width: 40px;
@@ -665,43 +673,43 @@ a,
   background: #222222 url("../img/search.svg") no-repeat top left;
 }
 
-/* line 217, ../sass/_app.scss */
+/* line 224, ../sass/_app.scss */
 .container {
   width: 1100px;
   margin: 0 auto;
 }
-/* line 220, ../sass/_app.scss */
+/* line 227, ../sass/_app.scss */
 .container header {
   text-align: center;
   margin: 0;
   padding: 50px 0 0 0;
 }
-/* line 224, ../sass/_app.scss */
+/* line 231, ../sass/_app.scss */
 .container header .logo {
   display: block;
   width: 563px;
   height: 80px;
   margin: 0 auto;
 }
-/* line 230, ../sass/_app.scss */
+/* line 237, ../sass/_app.scss */
 .container header nav {
   padding: 0;
 }
-/* line 232, ../sass/_app.scss */
+/* line 239, ../sass/_app.scss */
 .container header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 237, ../sass/_app.scss */
+/* line 244, ../sass/_app.scss */
 .container header nav ul li {
   display: inline-block;
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 242, ../sass/_app.scss */
+/* line 249, ../sass/_app.scss */
 .container header nav ul li a {
   display: inline-block;
   float: left;
@@ -713,72 +721,72 @@ a,
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
 }
-/* line 252, ../sass/_app.scss */
+/* line 259, ../sass/_app.scss */
 .container header nav ul li a:hover {
   color: #42cdc8;
   border-bottom: 1px solid #42cdc8;
 }
-/* line 258, ../sass/_app.scss */
+/* line 265, ../sass/_app.scss */
 .container header nav ul li:first-child a {
   padding: 0 35px 5px 0;
 }
-/* line 261, ../sass/_app.scss */
+/* line 268, ../sass/_app.scss */
 .container header nav ul li:last-child a {
   padding: 0 0 5px 35px;
 }
-/* line 271, ../sass/_app.scss */
+/* line 278, ../sass/_app.scss */
 .container #blog nav {
   width: 100%;
   float: left;
   position: relative;
   margin: 30px 0 10px 0;
 }
-/* line 276, ../sass/_app.scss */
+/* line 283, ../sass/_app.scss */
 .container #blog nav ul {
   clear: left;
   float: left;
   position: relative;
   left: 50%;
 }
-/* line 281, ../sass/_app.scss */
+/* line 288, ../sass/_app.scss */
 .container #blog nav ul li {
   position: relative;
   right: 50%;
 }
-/* line 293, ../sass/_app.scss */
+/* line 300, ../sass/_app.scss */
 .container #home nav {
   width: 100%;
   margin: 30px auto 0 auto;
   text-align: center;
 }
-/* line 297, ../sass/_app.scss */
+/* line 304, ../sass/_app.scss */
 .container #home nav ul {
   display: inline-block;
 }
-/* line 305, ../sass/_app.scss */
+/* line 312, ../sass/_app.scss */
 .container .lookBook_post {
   width: inherit;
   margin: 0 auto;
   padding: 0 0 0 0;
 }
-/* line 309, ../sass/_app.scss */
+/* line 316, ../sass/_app.scss */
 .container .lookBook_post h1 {
   margin-top: 30px;
   line-height: 5px;
   clear: both;
 }
-/* line 314, ../sass/_app.scss */
+/* line 321, ../sass/_app.scss */
 .container .lookBook_post p {
   margin: 0 0 20px;
   text-align: center;
 }
-/* line 319, ../sass/_app.scss */
+/* line 326, ../sass/_app.scss */
 .container .lookBook_post a img {
   width: 100%;
   height: auto;
   margin: 0 0 20px;
 }
-/* line 324, ../sass/_app.scss */
+/* line 331, ../sass/_app.scss */
 .container .lookBook_post time {
   color: #42cdc8;
   margin: 0;
@@ -789,38 +797,38 @@ a,
   text-transform: uppercase;
   background: url("../img/icon-clock.svg") no-repeat left;
 }
-/* line 335, ../sass/_app.scss */
+/* line 342, ../sass/_app.scss */
 .container .lookBook_post .line {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 342, ../sass/_app.scss */
+/* line 349, ../sass/_app.scss */
 .container section {
   width: 660px;
   margin: 0 auto;
   padding: 0 0 40px 0;
 }
-/* line 346, ../sass/_app.scss */
+/* line 353, ../sass/_app.scss */
 .container section article {
   width: inherit;
   margin: 40px 0;
 }
-/* line 349, ../sass/_app.scss */
+/* line 356, ../sass/_app.scss */
 .container section article h1 {
   line-height: 30px;
 }
-/* line 352, ../sass/_app.scss */
+/* line 359, ../sass/_app.scss */
 .container section article p {
   margin: 0 0 20px;
   text-align: center;
 }
-/* line 356, ../sass/_app.scss */
+/* line 363, ../sass/_app.scss */
 .container section article img {
   width: 100%;
   height: auto;
   margin: 0 0 20px;
 }
-/* line 360, ../sass/_app.scss */
+/* line 367, ../sass/_app.scss */
 .container section article time {
   color: #42cdc8;
   margin: 0;
@@ -831,7 +839,7 @@ a,
   text-transform: uppercase;
   background: url("../img/icon-clock.svg") no-repeat left;
 }
-/* line 372, ../sass/_app.scss */
+/* line 379, ../sass/_app.scss */
 .container section article .count {
   width: 100%;
   margin: 40px auto 0 auto;
@@ -840,26 +848,26 @@ a,
   word-spacing: 5px;
   text-transform: uppercase;
 }
-/* line 380, ../sass/_app.scss */
+/* line 387, ../sass/_app.scss */
 .container section article .count a:hover {
   color: #42cdc8;
 }
-/* line 387, ../sass/_app.scss */
+/* line 394, ../sass/_app.scss */
 .container section article .line {
   margin-top: 10px;
   margin-bottom: 60px;
 }
-/* line 391, ../sass/_app.scss */
+/* line 398, ../sass/_app.scss */
 .container section article .singleLine {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 397, ../sass/_app.scss */
+/* line 404, ../sass/_app.scss */
 .container section article .comments {
   width: 100%;
 }
 
-/* line 406, ../sass/_app.scss */
+/* line 413, ../sass/_app.scss */
 footer {
   width: 100%;
   margin: 0;
@@ -868,83 +876,83 @@ footer {
   text-align: left;
   background: black;
 }
-/* line 413, ../sass/_app.scss */
+/* line 420, ../sass/_app.scss */
 footer h4 {
   margin: 0 0 5px 0;
   font-size: 1.154em;
   text-transform: uppercase;
 }
-/* line 418, ../sass/_app.scss */
+/* line 425, ../sass/_app.scss */
 footer .left {
   float: left;
 }
-/* line 420, ../sass/_app.scss */
+/* line 427, ../sass/_app.scss */
 footer .left .block {
   width: 200px;
   float: left;
 }
-/* line 423, ../sass/_app.scss */
+/* line 430, ../sass/_app.scss */
 footer .left .block ul {
   width: inherit;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 428, ../sass/_app.scss */
+/* line 435, ../sass/_app.scss */
 footer .left .block ul li {
   margin: 0;
   padding: 0;
   font-size: 1em;
 }
-/* line 432, ../sass/_app.scss */
+/* line 439, ../sass/_app.scss */
 footer .left .block ul li a {
   color: #999;
 }
-/* line 434, ../sass/_app.scss */
+/* line 441, ../sass/_app.scss */
 footer .left .block ul li a:hover {
   color: white;
 }
-/* line 442, ../sass/_app.scss */
+/* line 449, ../sass/_app.scss */
 footer .right {
   float: right;
   text-align: right;
 }
-/* line 446, ../sass/_app.scss */
+/* line 453, ../sass/_app.scss */
 footer .right input[type="text"],
 footer .right input[type="submit"] {
   padding: 5px 10px;
 }
-/* line 449, ../sass/_app.scss */
+/* line 456, ../sass/_app.scss */
 footer .right input[type="text"] {
   color: #222;
   background: #e1e1e1;
 }
-/* line 453, ../sass/_app.scss */
+/* line 460, ../sass/_app.scss */
 footer .right input[type="submit"] {
   font-weight: bold;
 }
-/* line 455, ../sass/_app.scss */
+/* line 462, ../sass/_app.scss */
 footer .right input[type="submit"]:hover {
   background: #555;
 }
-/* line 460, ../sass/_app.scss */
+/* line 467, ../sass/_app.scss */
 footer .row {
   width: 100%;
   margin: 51px 0 0 0;
   color: #999;
 }
-/* line 464, ../sass/_app.scss */
+/* line 471, ../sass/_app.scss */
 footer .row p {
   margin: 0;
   padding: 0;
 }
-/* line 467, ../sass/_app.scss */
+/* line 474, ../sass/_app.scss */
 footer .row p a {
   color: #448ccb;
   font-style: italic;
 }
 
-/* line 475, ../sass/_app.scss */
+/* line 482, ../sass/_app.scss */
 .slider {
   width: 100%;
   margin: 10px 0 20px 0;
@@ -952,7 +960,7 @@ footer .row p a {
   background: #ccc;
 }
 
-/* line 482, ../sass/_app.scss */
+/* line 489, ../sass/_app.scss */
 .lookBook_meta {
   width: 660px;
   margin: 40px auto;

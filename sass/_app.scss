@@ -147,11 +147,14 @@ a,
 			li{
 				float: left;
 				margin: 10px 0 10px 10px;
-				padding: 0 10px;
+				padding: 0 10px 0 0;
 				line-height: 20px;
+				text-transform: uppercase;
 				border-right: 1px solid #666;
 				a{
 					color: #ccc;
+					margin: 0;
+					padding: 0;
 					font-size: .85em;
 					&:hover{
 						color: white;
@@ -159,6 +162,10 @@ a,
 				}
 				&:last-child{
 					border: none;
+				}
+				.cart{
+					padding-left: 20px;
+					background: url('../img/icon-cart.svg') no-repeat center left;
 				}
 			}
 		}
