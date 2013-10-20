@@ -5,7 +5,7 @@
         <?php //List categories
         $args = array(
             'taxonomy' => 'product_cat',
-            'child_of' => 13,            // Use ID of "Clothes" - Live is 13
+            'child_of' => 16,            // Use ID of "Clothes" - Live 13/Dev 16
             'hide_empty' => false        // For dev purposes
         );
 

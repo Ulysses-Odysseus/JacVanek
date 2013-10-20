@@ -51,7 +51,7 @@
     </footer>
     <!-- END: Footer -->
 
-    </div>
+    </div> <!-- END: Outer Wrap -->
 
     <!-- Functionality
     ---------------------->
