@@ -58,4 +58,11 @@ function custom_from($price){
 	$price = str_replace('From',$new_from,$price);
 	return $price;
 }
+
+add_filter('woocommerce_variation_price_html','test',10);
+add_filter('woocommerce_get_price_html','test',10);
+function test($price){
+	echo "Test";
+	return $price;
+}
 ?>
