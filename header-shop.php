@@ -73,8 +73,9 @@
             <nav>
                 <ul class="linearTrans">
                     <?php //List pages
-                    // $excl = '7,13,14,15,16,17,18,19,20,21,22,23';
-                    $excl = '6,13,14,22,7,11,9,12,8,10,18'; //For the live site
+                    $excl = '7,33,15,16,17,8,19,20,21,22,23'; // Uly
+                    // $excl = '7,13,14,15,16,17,18,19,20,21,22,23'; // Nick
+                    // $excl = '6,13,14,22,7,11,9,12,8,10,18'; //For the live site
                     $args = array(
                         'title_li' => __(''), //Remove default title
                         'depth'    => 1,      //No sub-pages

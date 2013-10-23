@@ -60,7 +60,7 @@ function custom_from($price){
 }
 
 add_filter('woocommerce_variation_price_html','test',10);
-add_filter('woocommerce_get_price_html','test',10);
+// add_filter('woocommerce_get_price_html','test',10);
 function test($price){
 	echo "Test";
 	return $price;
