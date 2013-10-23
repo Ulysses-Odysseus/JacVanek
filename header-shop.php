@@ -74,7 +74,6 @@
                 <ul class="linearTrans">
                     <?php //List pages
                     $excl = '90';
-                    // $excl = '6,13,14,22,7,9,12,8,10,18'; //For the live site
                     $args = array(
                         'title_li' => __(''), //Remove default title
                         'depth'    => 0,      //Allow sub-pages
