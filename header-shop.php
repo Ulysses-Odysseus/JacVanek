@@ -73,11 +73,11 @@
             <nav>
                 <ul class="linearTrans">
                     <?php //List pages
-                    $excl = '90';
+                    $excl = '85'; //Live is 90
                     $args = array(
                         'title_li' => __(''), //Remove default title
                         'depth'    => 0,      //Allow sub-pages
-                        'child_of' => 90
+                        'child_of' => 85
                         // 'exclude'  => $excl
                     );
                     wp_list_pages($args);

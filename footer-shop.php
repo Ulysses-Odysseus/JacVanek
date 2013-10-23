@@ -1,6 +1,6 @@
     </div>
     <!-- End Container -->
-    
+
     <!-- Footer -->
     <footer class="clearfix">
     	<div class="container">
@@ -8,18 +8,31 @@
     			<div class="block">
     				<h4>Customer Care</h4>
     				<ul>
-                        <li><a href="" target="_top" title="">Terms & Conditions</a></li>
-                        <li><a href="" target="_top" title="">Shopping & Returns</a></li>
-                        <li><a href="" target="_top" title="">Privacy Policy</a></li>
-                        <li><a href="" target="_top" title="">FAQ</a></li>
+                        <?php //List pages
+                        $excl = '101'; //Live is 101
+                        $args = array(
+                            'title_li' => __(''), //Remove default title
+                            'depth'    => 0,      //Allow sub-pages
+                            'child_of' => 101
+                            // 'exclude'  => $excl
+                        );
+                        wp_list_pages($args);
+                        ?>
                     </ul>
     			</div>
     			<div class="block">
     				<h4>About</h4>
     				<ul>
-                        <li><a href="" target="_top" title="">About</a></li>
-                        <li><a href="" target="_top" title="">Contact</a></li>
-                        <li><a href="" target="_top" title="">Jobs</a></li>
+                        <?php //List pages
+                        $excl = '103'; //Live is 103
+                        $args = array(
+                            'title_li' => __(''), //Remove default title
+                            'depth'    => 0,      //Allow sub-pages
+                            'child_of' => 103
+                            // 'exclude'  => $excl
+                        );
+                        wp_list_pages($args);
+                        ?>
                     </ul>
     			</div>
     			<div class="block">
@@ -37,7 +50,7 @@
                 <form>
                     <input class="" type="text" placeholder="Enter Email...">
                     <input class="" type="submit" value="SIGN UP">
-                </form>         
+                </form>
     		</div>
             <div class="row clearfix">
                 <div class="left">
