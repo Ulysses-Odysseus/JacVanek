@@ -1,3 +1,7 @@
+function selectNav( select ){
+	window.location = select.options[select.selectedIndex].id;
+}
+
 (function($){
 
 	$("#nav-toggle").bind( 'click', function () {

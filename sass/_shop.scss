@@ -66,11 +66,17 @@
 	}
 	
 	//Success messages individual
-	.woocommerce-info,
 	.woocommerce-message{
 		border-top: 1px solid $teal;
 		&:before{
 			background-color: $teal;
+		}
+	}
+
+	.woocommerce-info{
+		border-top: 1px solid orange;
+		&:before{
+			background-color: orange;
 		}
 	}
 

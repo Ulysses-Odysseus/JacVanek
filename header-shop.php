@@ -4,11 +4,11 @@
     <!-- Meta (Need Favicon)-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
-  
+
     <title>Shop Jac Vanek</title>
-  
+
     <!-- Styling -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
 
@@ -28,7 +28,7 @@
 
     <div class="outer-wrap">
 
-    <!-- Sub Header 
+    <!-- Sub Header
     ---------------------->
     <div class="wrapper clearfix">
 
@@ -68,17 +68,18 @@
             <a class="logo" href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
-            <!-- Menu 
+            <!-- Menu
             ---------------------->
             <nav>
                 <ul class="linearTrans">
                     <?php //List pages
-                    // $excl = '7,13,14,15,16,17,18,19,20,21,22,23';
-                    $excl = '6,13,14,22,7,11,9,12,8,10,18'; //For the live site
+                    $excl = '90';
+                    // $excl = '6,13,14,22,7,9,12,8,10,18'; //For the live site
                     $args = array(
                         'title_li' => __(''), //Remove default title
-                        'depth'    => 1,      //No sub-pages
-                        'exclude'  => $excl
+                        'depth'    => 0,      //Allow sub-pages
+                        'child_of' => 90
+                        // 'exclude'  => $excl
                     );
                     wp_list_pages($args);
                     ?>
