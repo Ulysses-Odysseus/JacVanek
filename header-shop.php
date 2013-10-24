@@ -71,14 +71,12 @@
             <!-- Menu
             ---------------------->
             <nav>
-                <!-- <ul class="linearTrans"> -->
-                    <?php //Custom menu
-                    wp_nav_menu( array(
-                        'theme_location' => 'header-menu',
-                        'menu_class'     => 'linearTrans'
-                        )
-                    );
-                    ?>
-                <!-- </ul> -->
+                <?php //Custom menu
+                wp_nav_menu( array(
+                    'theme_location' => 'header-menu',
+                    'menu_class'     => 'linearTrans'
+                    )
+                );
+                ?>
             </nav>
         </header>

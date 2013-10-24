@@ -64,7 +64,7 @@
 			}
 		}
 	}
-	
+
 	//Success messages individual
 	.woocommerce-message{
 		border-top: 1px solid $teal;
@@ -230,7 +230,7 @@
 			}
 		}
 	}
-	
+
 	//Product meta
 	.summary{
 		width: 450px;
@@ -252,26 +252,48 @@
 				font-weight: bold;
 			}
 		}
-		
+
 		.quantity{
+			width: 162px;
+			height: 40px;
+			margin: 0 0 10px 0;
 			input[type="number"]{
 				float: left;
 				width: 40px;
 				height: 40px;
+				float: left;
 				margin: 0 10px 0 0;
 				padding: 0 15px;
 				line-height: 40px;
-				background: #e1e1e1;
+				background: #ccc;
 				border: none;
 			}
+			.plus,
+			.minus{
+				//display: block;
+				width: 40px;
+				height: 40px;
+				margin: 0 0 0 1px;
+				float: right;
+				color: #ccc;
+				border: none;
+				box-shadow: none;
+				background: #333;
+				border-radius: 0;
+				text-shadow: none;
+				&:hover{
+					color: #ccc;
+					background: $teal;
+				}
+			}
 		}
-		
+
 		//Add to cart button
 		.single_add_to_cart_button{
 			float: left;
 		}
 	}
-	
+
 	//Related products
 	.related{
 		width: 100%;
@@ -353,9 +375,7 @@
 					padding: 5px 0;
 					margin: 0 0 20px 0;
 					border-top: 1px solid $teal;
-					// border-top: none;
 					background: url('../img/message-stripes.png') repeat top left;
-					// background: #f1f1f1;
 				}
 				.product-remove{
 					a{
@@ -402,6 +422,7 @@
 							width: 48%;
 							height: 48%;
 							right: -40%;
+							color: #ccc;
 							border: none;
 							box-shadow: none;
 							background: #333;
@@ -466,7 +487,7 @@
 			background: $teal;
 		}
 	}
-	
+
 	//Checkout Page, get some
 	.woocommerce{
 		.shop_table{
