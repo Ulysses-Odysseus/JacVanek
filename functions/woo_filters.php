@@ -27,6 +27,7 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );                     //Product sorting
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );           //SKU & categories
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 ); //Review & other tabs
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );           //Remove You may also like...
 
 //Add some things
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 8 );                //SKU & categories ( after title )
@@ -65,4 +66,3 @@ function test($price){
 	echo "Test";
 	return $price;
 }
-?>
