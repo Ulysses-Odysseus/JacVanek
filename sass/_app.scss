@@ -16,15 +16,11 @@ a{
 p{ font-size: 1em; }
 
 h1{
-	line-height: 30px;
 	font-size: 2.077em;
 	font-weight: 700;
+	line-height: 30px;
 	margin: 5px 0 20px 0;
 	text-transform: uppercase;
-}
-
-.outer-wrap{
-	background: white;
 }
 
 #nav-toggle,
@@ -32,6 +28,9 @@ h1{
 	display: none;
 }
 
+.outer-wrap{
+	background: white;
+}
 
 //Linear Transition ( On "href" only )
 a,
@@ -294,7 +293,12 @@ a,
 		}
 	}
 
-	// LookBook Post Styling
+	//Search page spacing
+	.searchPage{
+		padding-top: 20px;
+	}
+
+	//LookBook Post Styling
 	.lookBook_post{
 		width: inherit;
 		margin: 0 auto;
@@ -330,10 +334,6 @@ a,
 		}
 	}
 
-	.searchPage{
-		padding-top: 20px;
-	}
-
 	//Blog Posts & Styling
 	section{
 		width: 660px;
@@ -342,6 +342,9 @@ a,
 		article{
 			width: inherit;
 			margin: 40px 0;
+			h1{
+				line-height: 30px;
+			}
 			p{
 				margin: 0 0 20px;
 				text-align: center;

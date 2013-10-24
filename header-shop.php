@@ -61,7 +61,7 @@
         <button id="search-show" class="search-closed">Search</button>
     </div>
 
-    <div class="container">
+    <div class="container clearfix">
         <!-- HEADER
         ================================================== -->
         <header id="home">
@@ -71,17 +71,14 @@
             <!-- Menu
             ---------------------->
             <nav>
-                <ul class="linearTrans">
-                    <?php //List pages
-                    $excl = '85'; //Live is 90
-                    $args = array(
-                        'title_li' => __(''), //Remove default title
-                        'depth'    => 0,      //Allow sub-pages
-                        'child_of' => 85
-                        // 'exclude'  => $excl
+                <!-- <ul class="linearTrans"> -->
+                    <?php //Custom menu
+                    wp_nav_menu( array(
+                        'theme_location' => 'header-menu',
+                        'menu_class'     => 'linearTrans'
+                        )
                     );
-                    wp_list_pages($args);
                     ?>
-                </ul>
+                <!-- </ul> -->
             </nav>
         </header>

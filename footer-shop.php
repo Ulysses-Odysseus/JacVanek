@@ -9,11 +9,11 @@
     				<h4>Customer Care</h4>
     				<ul>
                         <?php //List pages
-                        $excl = '101'; //Live is 101
+                        $excl = '89'; //Live is 101
                         $args = array(
                             'title_li' => __(''), //Remove default title
                             'depth'    => 0,      //Allow sub-pages
-                            'child_of' => 101
+                            'child_of' => 89
                             // 'exclude'  => $excl
                         );
                         wp_list_pages($args);
@@ -24,11 +24,11 @@
     				<h4>About</h4>
     				<ul>
                         <?php //List pages
-                        $excl = '103'; //Live is 103
+                        $excl = '91'; //Live is 103
                         $args = array(
                             'title_li' => __(''), //Remove default title
                             'depth'    => 0,      //Allow sub-pages
-                            'child_of' => 103
+                            'child_of' => 91
                             // 'exclude'  => $excl
                         );
                         wp_list_pages($args);
