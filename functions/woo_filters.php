@@ -49,20 +49,28 @@ add_action( 'woocommerce_single_product_summary', 'tf_do_product_desc', 15 );
 
 /* Product Price
 =============================*/
+
+/* Change From to Price in Product */
 add_filter('woocommerce_variable_price_html','custom_from',10);
 add_filter('woocommerce_grouped_price_html','custom_from',10);
 add_filter('woocommerce_variable_sale_price_html','custom_from',10);
 
 function custom_from($price){
-	$new_from = "Price";
-	$price = str_replace('From',$new_from,$price);
+	$new_from = "";
+	$price = str_replace('From:',$new_from,$price);
 	return $price;
 }
 
-add_filter('woocommerce_variation_price_html','test',10);
-// add_filter('woocommerce_get_price_html','test',10);
-function test($price){
-	echo "Test";
+// Display Product Price
+add_filter('woocommerce_get_price_html','product_price',90);
+function product_price($price){
+	// echo "Test";
+	return $price;
+}
+
+add_filter('woocommerce_variation_price_html', 'variation_price');
+function variation_price($price){
+	// echo "test -";
 	return $price;
 }
 ?>
