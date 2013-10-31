@@ -30,7 +30,11 @@ global $woocommerce, $post, $product;
 
 		<?php
 	else:
-		remove_action( 'woocommerce_variable_add_to_cart', 'woocommerce_variable_add_to_cart', 30 );
+		remove_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 30 );
+		add_action( 'woocommerce_simple_add_to_cart', 'woocommerce_simple_add_to_cart', 1 );
+
+		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+		add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 60 ); 
 		?> 
 		<p itemprop="price" class="price"><?php echo $product->get_price_html(); ?></p>
 		<?php

@@ -1,4 +1,4 @@
-<?php 
+<?php
 //Add featured image to posts
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
@@ -39,22 +39,22 @@ function lookBook_single_template($template){
 
     }
     return ('' != $new_template) ? $new_template : $template;
-   
+
 }
 
 /*==========================*/
-/***    	LightBox   	  ***/
+/***      Custom Menu     ***/
 /*==========================*/
-// LOAD PRETTY PHOTO for the whole site
-add_action( 'wp_enqueue_scripts', 'frontend_scripts_include_lightbox' );
-function frontend_scripts_include_lightbox() {
-  global $woocommerce;
-  $suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-  $lightbox_en = get_option( 'woocommerce_enable_lightbox' ) == 'yes' ? true : false;
-  if ( $lightbox_en ) {
-    wp_enqueue_script( 'prettyPhoto', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
-    wp_enqueue_script( 'prettyPhoto-init', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
-    wp_enqueue_style( 'woocommerce_prettyPhoto_css', $woocommerce->plugin_url() . '/assets/css/prettyPhoto.css' );
-  }
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
 }
-?>
+add_action( 'init', 'register_my_menu' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );

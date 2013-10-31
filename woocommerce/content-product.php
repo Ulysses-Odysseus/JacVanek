@@ -64,6 +64,6 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 
 	</a>
 
-	<?php //do_action( 'woocommerce_after_shop_loop_item' ); ?>
+	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 
 </li>

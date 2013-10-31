@@ -4,11 +4,11 @@
     <!-- Meta (Need Favicon)-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
-  
+
     <title>Shop Jac Vanek</title>
-  
+
     <!-- Styling -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" media="all">
 
@@ -28,7 +28,7 @@
 
     <div class="outer-wrap">
 
-    <!-- Sub Header 
+    <!-- Sub Header
     ---------------------->
     <div class="wrapper clearfix">
 
@@ -61,16 +61,17 @@
         <button id="search-show" class="search-closed">Search</button>
     </div>
 
-    <div class="container">
+    <div class="container clearfix">
         <!-- HEADER
         ================================================== -->
         <header id="home">
             <a class="logo" href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
-            <!-- Menu 
+            <!-- Menu
             ---------------------->
             <nav>
+                
                 <ul class="linearTrans">
                     <?php //List pages
                     $excl = '31,15,14,8,16,33,27'; // Uly
@@ -83,6 +84,13 @@
                     );
                     wp_list_pages($args);
                     ?>
-                </ul>
+
+                    <?php //Custom menu
+                    // wp_nav_menu( array(
+                    //     'theme_location' => 'header-menu',
+                    //     'menu_class'     => 'linearTrans'
+                    //     )
+                    // );
+                    ?>
             </nav>
         </header>

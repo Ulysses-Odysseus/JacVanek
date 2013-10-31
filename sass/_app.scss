@@ -5,7 +5,7 @@ html{
 	height: 100%;
 	text-align: center;
 	font: normal 13px/18px 'Source Sans Pro', sans-serif;
-	background: white;
+	background: black;
 }
 
 a{
@@ -18,6 +18,7 @@ p{ font-size: 1em; }
 h1{
 	font-size: 2.077em;
 	font-weight: 700;
+	line-height: 30px;
 	margin: 5px 0 20px 0;
 	text-transform: uppercase;
 }
@@ -27,6 +28,9 @@ h1{
 	display: none;
 }
 
+.outer-wrap{
+	background: white;
+}
 
 //Linear Transition ( On "href" only )
 a,
@@ -34,10 +38,10 @@ a,
 .outer-wrap,
 .single_add_to_cart_button{
 	//EaseInOut
-	-webkit-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
-	   -moz-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
-	    -ms-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
-	     -o-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-webkit-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	   -moz-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	    -ms-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	     -o-transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	        transition: all 200ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
@@ -165,9 +169,9 @@ a,
 					height: inherit;
 					overflow: hidden;
 					text-indent: -999em;
-					opacity: .3;
+					opacity: .2;
 					&:hover{
-						opacity: .6;
+						opacity: .5;
 					}
 				}
 				.inst{ background: url('../img/icon-instagram.svg') no-repeat center; }
@@ -208,9 +212,12 @@ a,
 		padding: 50px 0 0 0;
 		.logo{
 			display: block;
-			width: 563px;
-			height: 80px;
+			width: 850px;
 			margin: 0 auto;
+			img{
+				width: 100%;
+				height: auto;
+			}
 		}
 		nav{
 			padding: 0;
@@ -271,7 +278,7 @@ a,
 		}
 	}
 
-	
+
 	//Shop header
 	#home{
 		//Navigation
@@ -286,14 +293,18 @@ a,
 		}
 	}
 
-	// LookBook Post Styling
+	//Search page spacing
+	.searchPage{
+		padding-top: 20px;
+	}
+
+	//LookBook Post Styling
 	.lookBook_post{
 		width: inherit;
 		margin: 0 auto;
 		padding: 0 0 0 0;
 		h1{
 			margin-top: 30px;
-			line-height: 5px;
 			clear: both;
 		}
 		p{
@@ -322,7 +333,7 @@ a,
 			margin-bottom: 20px;
 		}
 	}
-	
+
 	//Blog Posts & Styling
 	section{
 		width: 660px;

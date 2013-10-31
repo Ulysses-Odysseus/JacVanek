@@ -5,8 +5,8 @@
         <?php //List categories
         $args = array(
             'taxonomy' => 'product_cat',
-            'child_of' => 13,            // Use ID of "Clothes" - Live is 13
-            'hide_empty' => false        // For dev purposes
+            'child_of' => 16,           // Use ID of "Clothes" - Live 13/Dev 16
+            'hide_empty' => true        // For dev purposes
         );
 
         $categories = get_terms( 'product_cat', $args );
@@ -17,7 +17,7 @@
         ?>
     </ul>
 
-    <select class="mobile">
+    <select onchange="selectNav(this)" class="mobile">
         <?php //List categories
         foreach ($categories as $cat) {
             echo '<option id="' . get_term_link( $cat ) . '">' . $cat->name . '</option>';

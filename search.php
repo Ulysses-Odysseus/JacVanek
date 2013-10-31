@@ -18,26 +18,26 @@ get_header('shop'); ?>
 
 	$search = new WP_Query($search_query);
 	?>
-	
+
 	<!-- Search Template Content -->
-	<section>
+	<section class="searchPage">
         <div>
 
         <?php if ( have_posts() ) : ?>
 
                 <h1><?php printf( __( 'Search Results for : %s', 'jacvanek' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 
-            <?php /* Start the Loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-					<a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
-					<?php $thumb_size = 'medium' //Options (thumbnail - medium - large - full)?>
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($thumb_size);?></a>
-                <?php// the_content(); ?>
-                <span class="line"></span>
+            <?php //Start the Loop
+            while ( have_posts() ) : the_post(); ?>
+				<a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
+				<?php $thumb_size = 'medium' //Options (thumbnail - medium - large - full)?>
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($thumb_size);?></a>
+            <?php// the_content(); ?>
+            <span class="line"></span>
 
-            <?php endwhile; ?> 
+            <?php endwhile; ?>
             <?php else : ?>
- 
+
                 <h1 class="entry-title"><?php _e( 'Nothing Found', 'jacvanek' ); ?></h1>
 
 				<div>
@@ -47,7 +47,7 @@ get_header('shop'); ?>
 					</div>
  				</div>
             <?php endif; ?>
- 
+
 	    </div>
     </section>
 
