@@ -32,7 +32,7 @@ h1{
 	background: white;
 }
 
-//Linear Transition ( On "href" only )
+//Linear Transition
 a,
 .button,
 .outer-wrap,
@@ -79,6 +79,7 @@ a,
 		color: #ccc;
 		background: #222;
 		border: none;
+		border-radius: none;
 	}
 	input[type="text"]{
 		outline: none;

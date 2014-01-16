@@ -1,7 +1,7 @@
 <?php
 // This is the blog landing page
 get_header('blog'); ?>
-    
+
     <!-- Post Content
     ---------------------->
     <section>
@@ -20,16 +20,18 @@ get_header('blog'); ?>
                 endif;
                 ?>
                 <!-- Content -->
-                <?php 
-                if(the_excerpt() != '') : 
+                <?php // If excerpt exists, show it
+                if(!$post->post_excerpt){
+                    the_content();
+                } else {
                     the_excerpt();
-                endif;
+                }
                 ?>
                 <!-- Comments -->
                 <div class="count linearTrans">
                     <a href="<?php the_permalink(); ?>#comment_section">
-                        <?php 
-                        comments_number( 
+                        <?php
+                        comments_number(
                             'no comments',                            // (optional) Text to display when there are no comments.
                             '<strong>1</strong>&nbsp;&bull; comment', // (optional) Text to display when there is one comment.
                             '<strong>%</strong>&nbsp;&bull; comments' // (optional) Text to display when there is more than one comment.

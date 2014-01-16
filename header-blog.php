@@ -37,7 +37,7 @@
         <!-- HEADER
         ================================================== -->
         <header id="blog">
-            <a class="logo" href="<?php echo get_site_url(); ?>" title="Jac Vanek" target="_top">
+            <a class="logo" href="<?php echo get_site_url(); ?>/blog" title="Jac Vanek" target="_top">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/jac-vanek-logo.svg" alt="Jac Vanek Logo">
             </a>
             <!-- Categories Bar
